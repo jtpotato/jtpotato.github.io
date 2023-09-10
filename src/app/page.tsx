@@ -12,13 +12,15 @@ import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
 import { GrGithub } from "react-icons/gr";
 import { SiThreads } from "react-icons/si";
 import Center from "@/boba-components/Center";
+import FancyTextBackground from "@/boba-components/FancyTextBackground";
+import MouseToCss from "@/boba-components/MouseToCss";
 
 function Home() {
   return (
     <>
       <div className="p-4">
-        <MajorSegment image={<></>} imageFirst={false}>
-          <h1 className="text-6xl font-bold">Hi!</h1>
+        <MajorSegment image={<div></div>} imageFirst={false}>
+          <h1 className="text-6xl">Hi!</h1>
           <div>
             <h2 className="inline">I'm </h2>
             <Underline>
@@ -103,13 +105,8 @@ function Home() {
         <div className="h-4"></div>
         <MajorSegment image={<div className="w-1/2"></div>} imageFirst={true}>
           <div className="text-lg">
-            <p>
-              There are very few reasons to be here, but since you're here
-              anyways...
-              <br />
-              <br />
-              Most of my work focuses on small, interesting projects that try to
-              do something in a new way (incorrectly).
+            <p className="mb-1">
+              I usually have small projects that I use to experiment with new (usually bad) ideas.
               <br />
               <br />
               Examples:
@@ -121,7 +118,10 @@ function Home() {
               >
                 <Chip text="Improvised ChatGPT with a Markov Chain" />
               </a>
-              <a href="https://github.com/jtpotato/scuffed-instrument" target="_blank">
+              <a
+                href="https://github.com/jtpotato/scuffed-instrument"
+                target="_blank"
+              >
                 <Chip text="Musical Instrument with Arduino" />
               </a>
               <a href="https://github.com/jtpotato/autocut" target="_blank">
