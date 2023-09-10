@@ -13,7 +13,6 @@ import { GrGithub } from "react-icons/gr";
 import { SiThreads } from "react-icons/si";
 import Center from "@/boba-components/Center";
 import FancyTextBackground from "@/boba-components/FancyTextBackground";
-import MouseToCss from "@/boba-components/MouseToCss";
 
 function Home() {
   return (

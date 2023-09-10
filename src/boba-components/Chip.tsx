@@ -13,7 +13,7 @@ function Chip(props: ChipProps) {
 
   useEffect(() => {
     // set top left coordinates css variables
-    function saveMousePos(e) {
+    function saveMousePos(e: MouseEvent) {
       if (chipRef.current) {
         const rect = chipRef.current.getBoundingClientRect();
         const x = e.clientX - rect.left;
