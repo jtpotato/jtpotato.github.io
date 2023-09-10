@@ -148,20 +148,6 @@ function Home() {
               </Row>
             </div>
           </MajorSegment>
-          <MajorSegment image={undefined} imageFirst={false}>
-            <h3>Design</h3>
-            <p>
-              If you couldn't tell, I'm not a designer. I do like pretty stuff
-              though and I hope this site lives up to that standard.
-              <br />
-              <br />
-              In this site:
-            </p>
-            <ul className="list-disc ml-8">
-              <li>IBM Plex Sans</li>
-              <li>System Fonts</li>
-            </ul>
-          </MajorSegment>
         </BentoRow>
 
         <BentoRow>
