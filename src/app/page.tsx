@@ -117,36 +117,53 @@ function Home() {
           </Row>
         </Center>
         <div className="h-4"></div>
-        <MajorSegment image={<></>} imageFirst={true}>
-          <div className="">
-            <p className="mb-1">
-              I have many small projects that explore different, novel ways of
-              making things. There are probably very good reasons why things
-              aren't done the way I do them, but if it half-works, that's all
-              that matters, right?
+        <BentoRow>
+          <MajorSegment image={<></>} imageFirst={true}>
+            <div className="">
+              <p className="mb-1">
+                I have many small projects that explore different, novel ways of
+                making things. There are probably very good reasons why things
+                aren't done the way I do them, but if it half-works, that's all
+                that matters, right?
+                <br />
+                <br />
+                Examples:
+              </p>
+              <Row>
+                <a
+                  href="https://github.com/jtpotato/language-model"
+                  target="_blank"
+                >
+                  <Chip text="Improvised ChatGPT with a Markov Chain" />
+                </a>
+                <a
+                  href="https://github.com/jtpotato/scuffed-instrument"
+                  target="_blank"
+                >
+                  <Chip text="Musical Instrument with Arduino" />
+                </a>
+                <a href="https://github.com/jtpotato/autocut" target="_blank">
+                  <Chip text="Yet Another CLI Abstraction Layer" />
+                </a>
+              </Row>
+            </div>
+          </MajorSegment>
+          <MajorSegment image={undefined} imageFirst={false}>
+            <h3>Design</h3>
+            <p>
+              If you couldn't tell, I'm not a designer. I do like pretty stuff
+              though and I hope this site lives up to that standard.
               <br />
               <br />
-              Examples:
+              In this site:
             </p>
-            <Row>
-              <a
-                href="https://github.com/jtpotato/language-model"
-                target="_blank"
-              >
-                <Chip text="Improvised ChatGPT with a Markov Chain" />
-              </a>
-              <a
-                href="https://github.com/jtpotato/scuffed-instrument"
-                target="_blank"
-              >
-                <Chip text="Musical Instrument with Arduino" />
-              </a>
-              <a href="https://github.com/jtpotato/autocut" target="_blank">
-                <Chip text="Yet Another CLI Abstraction Layer" />
-              </a>
-            </Row>
-          </div>
-        </MajorSegment>
+            <ul className="list-disc ml-8">
+              <li>IBM Plex Sans</li>
+              <li>System Fonts</li>
+            </ul>
+          </MajorSegment>
+        </BentoRow>
+
         <BentoRow>
           <MajorSegment image={<></>} imageFirst={false}>
             <div className="relative">

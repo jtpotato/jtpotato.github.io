@@ -35,6 +35,14 @@ function GlitchyTextOnScroll() {
       hasScrolled = false;
     }, 10);
 
+    // get the radial gradient effect
+    window.onmousemove = (e) => {
+      if (!glitchTextRef.current) return;
+      const rect = glitchTextRef.current.getBoundingClientRect()
+      glitchTextRef.current.style.setProperty("--mouse-x", e.clientX - rect.left + "px");
+      glitchTextRef.current.style.setProperty("--mouse-y", e.clientY - rect.top + "px");
+    }
+
     return () => {
       clearInterval(scrollChecker);
       window.onscroll = null;
