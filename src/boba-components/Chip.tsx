@@ -12,6 +12,10 @@ function Chip(props: ChipProps) {
   const chipRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (!chipRef.current) return;
+    chipRef.current.style.setProperty("--mouse-x", -1000000 + "px");
+    chipRef.current.style.setProperty("--mouse-y", -1000000 + "px");
+
     // set top left coordinates css variables
     function saveMousePos(e: MouseEvent) {
       if (chipRef.current) {

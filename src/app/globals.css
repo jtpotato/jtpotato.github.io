@@ -4,6 +4,7 @@
 
 :root {
   font-family: "IBM Plex Sans", sans-serif;
+  white-space-collapse: preserve;
 }
 
 h1 {
