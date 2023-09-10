@@ -12,6 +12,7 @@ import { GrGithub } from "react-icons/gr";
 import { SiThreads } from "react-icons/si";
 import Center from "@/boba-components/Center";
 import BentoRow from "@/boba-components/BentoRow";
+import GlitchyTextOnScroll from "@/boba-components/GlitchyTextOnScroll";
 
 function Home() {
   return (
@@ -148,22 +149,25 @@ function Home() {
         </MajorSegment>
         <BentoRow>
           <MajorSegment image={<></>} imageFirst={false}>
-            <h2>Tech Stack</h2>
-            <p>
-              This site uses Next.js, along with a custom-made UI toolkit for
-              super efficient prototyping. This is currently deployed on GitHub
-              Pages - because out of all the free hosting services, GitHub's
-              domain name is the most acceptable... I am not affording my own
-              domain in this economy 😭
-              <br />
-              <br />
-            </p>
-            <span>
-              Follow the development of{"  "}
-              <a href="https://github.com/jtpotato/boba-ui" target="_blank">
-                <Chip text={"boba-ui"} />
-              </a>
-            </span>
+            <div className="relative">
+              <GlitchyTextOnScroll />
+              <h2>Tech Stack</h2>
+              <p>
+                This site uses Next.js, along with a custom-made UI toolkit for
+                super efficient prototyping. This is currently deployed on
+                GitHub Pages - because out of all the free hosting services,
+                GitHub's domain name is the most acceptable... I am not
+                affording my own domain in this economy 😭
+                <br />
+                <br />
+              </p>
+              <span>
+                Follow the development of{"  "}
+                <a href="https://github.com/jtpotato/boba-ui" target="_blank">
+                  <Chip text={"boba-ui"} />
+                </a>
+              </span>
+            </div>
           </MajorSegment>
 
           <MajorSegment image={<></>} imageFirst={false}>
