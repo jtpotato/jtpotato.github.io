@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import Card from "@/boba-components/Card";
 import Chip from "@/boba-components/Chip";
 import ClickSwitch from "@/boba-components/ClickSwitch";
 import MajorSegment from "@/boba-components/MajorSegment";
@@ -12,8 +11,6 @@ import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
 import { GrGithub } from "react-icons/gr";
 import { SiThreads } from "react-icons/si";
 import Center from "@/boba-components/Center";
-import FancyTextBackground from "@/boba-components/FancyTextBackground";
-import BentoThirds from "@/boba-components/BentoRow";
 import BentoRow from "@/boba-components/BentoRow";
 
 function Home() {
