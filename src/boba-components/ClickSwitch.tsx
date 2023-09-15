@@ -1,9 +1,14 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import React, { ReactNode, useEffect, useRef, useState } from "react";
 import "./ClickSwitch.css"
 
-function ClickSwitch() {
+type ClickSwitchProps = {
+  a: ReactNode;
+  b: ReactNode;
+};
+
+function ClickSwitch(props: React.PropsWithChildren<ClickSwitchProps>) {
   const [displayA, setDisplayA] = useState(true);
   const hoverSwitchRef = useRef<HTMLButtonElement>(null);
 
@@ -18,9 +23,9 @@ function ClickSwitch() {
     <>
       <button className="inline clickswitch" onClick={handleClickEvent} ref={hoverSwitchRef}>
         {displayA ? (
-          <span className="inline">Joel</span>
+          props.a
         ) : (
-          <span className="inline">奕諴</span>
+          props.b
         )}
       </button>
     </>

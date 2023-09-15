@@ -14,38 +14,38 @@ function GlitchyTextOnScroll() {
     const randomChar = () =>
       chars[Math.floor(Math.random() * (chars.length - 1))];
     const randomString = (length: number) => {
-      let theRandomString = Array.from(Array(length)).map(randomChar).join("");
-      // put some easter egg somewhere in the middle of that string
-      theRandomString =
-        theRandomString.slice(0, 2000 * Math.random() + 1000) + "boba!".repeat(80) + "honestlyiwouldnotexpectanyonetoreadthis" + theRandomString.slice(4000);
-      return theRandomString;
+      return Array.from(Array(length)).map(randomChar).join("");
     };
     if (glitchTextRef.current == null) return;
 
-    glitchTextRef.current.innerText = randomString(8000);
+    glitchTextRef.current.innerText = randomString(100).repeat(80);
 
     let hasScrolled = false;
 
-    window.onscroll = () => (hasScrolled = true);
+    window.addEventListener("scroll", () => (hasScrolled = true));
 
-    const scrollChecker = setInterval(() => {
-      if (!hasScrolled) return;
+    function onMouseMove(e: MouseEvent) {
       if (!glitchTextRef.current) return;
-      glitchTextRef.current.innerText = randomString(8000);
-      hasScrolled = false;
-    }, 10);
-
-    // get the radial gradient effect
-    window.onmousemove = (e) => {
-      if (!glitchTextRef.current) return;
-      const rect = glitchTextRef.current.getBoundingClientRect()
-      glitchTextRef.current.style.setProperty("--mouse-x", e.clientX - rect.left + "px");
-      glitchTextRef.current.style.setProperty("--mouse-y", e.clientY - rect.top + "px");
+      const rect = glitchTextRef.current.getBoundingClientRect();
+      glitchTextRef.current.style.setProperty(
+        "--mouse-x",
+        e.clientX - rect.left + "px"
+      );
+      glitchTextRef.current.style.setProperty(
+        "--mouse-y",
+        e.clientY - rect.top + "px"
+      );
     }
 
+    // get the radial gradient effect
+    window.addEventListener("mousemove", onMouseMove);
+
+    glitchTextRef.current.style.setProperty("--mouse-x", 1000000 + "px");
+    glitchTextRef.current.style.setProperty("--mouse-y", 1000000 + "px");
+
     return () => {
-      clearInterval(scrollChecker);
-      window.onscroll = null;
+      window.removeEventListener("scroll", () => (hasScrolled = true));
+      window.removeEventListener("mousemove", onMouseMove);
     };
   }, []);
 

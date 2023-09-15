@@ -34,7 +34,7 @@
   /* Noise */
   background-image: url("https://raw.githubusercontent.com/jtpotato/boba-ui/main/assets/white-noise.jpg");
   background-blend-mode: multiply;
-  background-size: 400%;
+  background-size: 32em;
   filter: contrast(1.2);
   opacity: 0.1;
 }

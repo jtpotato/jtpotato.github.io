@@ -1,6 +1,6 @@
 function Center(props: React.PropsWithChildren<{}>) {
   return (
-    <div className="flex justify-center items-center">{props.children}</div>
+    <div className="flex justify-center items-center w-fit m-auto">{props.children}</div>
   );
 }
 
