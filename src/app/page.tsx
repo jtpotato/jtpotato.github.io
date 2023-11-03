@@ -1,194 +1,113 @@
-/* eslint-disable react/no-unescaped-entities */
+import Image from 'next/image'
 
-import Chip from "@/boba-components/Chip";
-import ClickSwitch from "@/boba-components/ClickSwitch";
-import MajorSegment from "@/boba-components/MajorSegment";
-import Row from "@/boba-components/Row";
-import Underline from "@/boba-components/Underline";
-import { MdCode, MdOutlineLocationOn } from "react-icons/md";
-import { PiPencilSimple } from "react-icons/pi";
-import { AiOutlineInstagram, AiOutlineYoutube } from "react-icons/ai";
-import { GrGithub } from "react-icons/gr";
-import { SiThreads } from "react-icons/si";
-import Center from "@/boba-components/Center";
-import BentoRow from "@/boba-components/BentoRow";
-import GlitchyTextOnScroll from "@/boba-components/GlitchyTextOnScroll";
-
-function Home() {
+export default function Home() {
   return (
-    <>
-      <div className="p-4 flex flex-col gap-4">
-        <BentoRow>
-          <MajorSegment image={<></>} imageFirst={false}>
-            <div>
-              <h1 className="text-6xl">Hi!</h1>
-              <h2 className="inline">I'm </h2>
-              <Underline>
-                <h2 className="inline">
-                  <ClickSwitch a={"Joel"} b={"奕諴"} />
-                </h2>
-              </Underline>
-              <h2 className="inline">.</h2>
-              <div className="h-4"></div>
-              <Row>
-                <Chip
-                  text="Melbourne, AU"
-                  logo={
-                    <span className="text-md">
-                      <MdOutlineLocationOn />
-                    </span>
-                  }
-                />
-                <Chip
-                  text="Developer"
-                  logo={
-                    <span className="text-md">
-                      <MdCode />
-                    </span>
-                  }
-                />
-                <Chip
-                  text="Student"
-                  logo={
-                    <span className="text-sm">
-                      <PiPencilSimple />
-                    </span>
-                  }
-                />
-              </Row>
-            </div>
-          </MajorSegment>
-
-          <MajorSegment image={<></>} imageFirst={true}>
-            <div>
-              <h2>About Me</h2>
-              <p>
-                Coding since 2015. I make silly things and do stuff with
-                computers. I happen to touch a non-zero amount of grass per
-                year.
-              </p>
-              <br />
-              <p className="text-xs italic">
-                and if you haven't already, click my name. it does do something.
-              </p>
-            </div>
-          </MajorSegment>
-        </BentoRow>
-        <Center>
-          <Row>
-            <a href="https://www.youtube.com/@jtpotato" target="_blank">
-              <Chip
-                text="YouTube"
-                logo={
-                  <span className="">
-                    <AiOutlineYoutube />
-                  </span>
-                }
-              />
-            </a>
-            <a href="https://github.com/jtpotato" target="_blank">
-              <Chip
-                text="GitHub"
-                logo={
-                  <span className="">
-                    <GrGithub />
-                  </span>
-                }
-              />
-            </a>
-            <a href="https://www.instagram.com/jtpotato_/" target="_blank">
-              <Chip
-                text="Instagram"
-                logo={
-                  <span className="">
-                    <AiOutlineInstagram />
-                  </span>
-                }
-              />
-            </a>
-            <a href="https://www.threads.net/@jtpotato_" target="_blank">
-              <Chip
-                text="Threads"
-                logo={
-                  <span className="text-sm">
-                    <SiThreads />
-                  </span>
-                }
-              />
-            </a>
-          </Row>
-        </Center>
-
-        <BentoRow>
-          <MajorSegment image={<></>} imageFirst={true}>
-            <div className="">
-              <p className="mb-1">
-                I have many small projects that explore different, novel ways of
-                making things. There are probably very good reasons why things
-                aren't done the way I do them, but if it half-works, that's all
-                that matters, right?
-                <br />
-                <br />
-                Examples:
-              </p>
-              <Row>
-                <a
-                  href="https://github.com/jtpotato/language-model"
-                  target="_blank"
-                >
-                  <Chip text="Improvised ChatGPT with a Markov Chain" />
-                </a>
-                <a
-                  href="https://github.com/jtpotato/scuffed-instrument"
-                  target="_blank"
-                >
-                  <Chip text="Musical Instrument with Arduino" />
-                </a>
-                <a href="https://github.com/jtpotato/autocut" target="_blank">
-                  <Chip text="Yet Another CLI Abstraction Layer" />
-                </a>
-              </Row>
-            </div>
-          </MajorSegment>
-        </BentoRow>
-
-        <BentoRow>
-          <div className="relative">
-            <MajorSegment image={<></>} imageFirst={false}>
-              <GlitchyTextOnScroll />
-              <div>
-                <h2>Tech Stack</h2>
-                <p>
-                  This site uses Next.js, along with a custom-made UI toolkit
-                  for super efficient prototyping. This is currently deployed on
-                  GitHub Pages - because out of all the free hosting services,
-                  GitHub's domain name is the most acceptable... I am not
-                  affording my own domain in this economy 😭
-                  <br />
-                  <br />
-                </p>
-                <span>
-                  Follow the development of{"  "}
-                  <a href="https://github.com/jtpotato/boba-ui" target="_blank">
-                    <Chip text={"boba-ui"} />
-                  </a>
-                </span>
-              </div>
-            </MajorSegment>
-          </div>
-
-          <MajorSegment image={<></>} imageFirst={false}>
-            <div className="">
-              <h2>Under Construction</h2>
-              <p>
-                This site will be quite empty for now... Maybe check back later?
-              </p>
-            </div>
-          </MajorSegment>
-        </BentoRow>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+          Get started by editing&nbsp;
+          <code className="font-mono font-bold">src/app/page.tsx</code>
+        </p>
+        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
+          <a
+            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            By{' '}
+            <Image
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              className="dark:invert"
+              width={100}
+              height={24}
+              priority
+            />
+          </a>
+        </div>
       </div>
-    </>
-  );
-}
 
-export default Home;
+      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+        <Image
+          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+          src="/next.svg"
+          alt="Next.js Logo"
+          width={180}
+          height={37}
+          priority
+        />
+      </div>
+
+      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+        <a
+          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Docs{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Find in-depth information about Next.js features and API.
+          </p>
+        </a>
+
+        <a
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Learn{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          </p>
+        </a>
+
+        <a
+          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Templates{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Explore the Next.js 13 playground.
+          </p>
+        </a>
+
+        <a
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Deploy{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          </p>
+        </a>
+      </div>
+    </main>
+  )
+}
