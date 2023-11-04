@@ -7,7 +7,7 @@ type PostPreviewProps = {
 
 function PostPreview({post}: PostPreviewProps) {
     return (
-        <div className="p-4 border border-amber-100/20 bg-white/5">
+        <div className="p-4 border border-amber-100/20 bg-neutral-900">
             <p className="font-bold">{post.title}</p>
             <p className="text-xs text-gray-500">{post.published}</p>
             <Description>{post.content}</Description>

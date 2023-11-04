@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Header from './Header'
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-black/95'>{children}</body>
+      <body className='bg-black/95'>
+        {children}
+      </body>
     </html>
   )
 }
