@@ -18,8 +18,8 @@
     @apply text-lg font-bold mt-4
 }
 
-.md > code {
-    @apply bg-neutral-800 font-mono
+.md > * > code {
+    @apply bg-secondary font-mono
 }
 
 .md > ul {

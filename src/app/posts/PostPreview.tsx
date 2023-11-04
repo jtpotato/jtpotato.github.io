@@ -10,8 +10,8 @@ function PostPreview({ post }: PostPreviewProps) {
   return (
     <Link href={`/posts/${post.slug}`}>
       <div className="py-4">
-        <p className="font-bold">{post.title}</p>
-        <p className="text-xs text-gray-500">{post.published}</p>
+        <p className="font-bold text-accent">{post.title}</p>
+        <p className="">{post.published}</p>
         <Description>{post.content}</Description>
       </div>
     </Link>

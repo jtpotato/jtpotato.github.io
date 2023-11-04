@@ -10,7 +10,7 @@ function Description({children}: React.PropsWithChildren) {
         overflow: "hidden",
       }}
 
-      className="text-gray-500"
+      className=""
     >
         {children}
     </p>
