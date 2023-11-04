@@ -2,41 +2,40 @@ import fs from "fs";
 import path from "path";
 import grayMatter from "gray-matter";
 import Post from "./TPost";
+import { globSync } from "glob";
 
 function GetPosts() {
-    let files: path.ParsedPath[] = [];
-    // read every file in posts directory
-    fs.readdirSync("posts").forEach(file => {
-        files.push(path.parse(file));
-    })
+  let fileNameArray: any[] = globSync("posts/**/*.md", {})
 
-    let posts: Post[] = [];
+  console.log(fileNameArray)
 
-    // use gray matter to get the title of each post
-    files.forEach(file => {
-        let fileContents = fs.readFileSync(`posts/${file.base}`, "utf8");
-        let { data, content } = grayMatter(fileContents);
+  let posts: Post[] = [];
 
-        // Parse dates
-        const published = new Date(data.published);
-        const edited = new Date(data.edited);
+  // use gray matter to get the title of each post
+  fileNameArray.forEach((file) => {
+    let fileContents = fs.readFileSync(`${file}`, "utf8");
+    let { data, content } = grayMatter(fileContents);
 
-        posts.push({
-            slug: file.name,
-            title: data.title,
-            published: published,
-            edited: edited,
-            content: content,
-            image: data.image
-        });
-    })
+    // Parse dates
+    const published = new Date(data.published);
+    const edited = new Date(data.edited);
 
-    // Sort posts for newest first
-    posts.sort((a, b) => {
-        return b.published.getTime() - a.published.getTime();
-    })
+    posts.push({
+      slug: path.parse(file).name,
+      title: data.title,
+      published: published,
+      edited: edited,
+      content: content,
+      image: data.image,
+    });
+  });
 
-    return posts;
+  // Sort posts for newest first
+  posts.sort((a, b) => {
+    return b.published.getTime() - a.published.getTime();
+  });
+
+  return posts;
 }
 
 export default GetPosts;
