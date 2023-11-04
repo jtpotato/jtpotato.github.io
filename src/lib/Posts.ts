@@ -7,8 +7,6 @@ import { globSync } from "glob";
 function GetPosts() {
   let fileNameArray: any[] = globSync("posts/**/*.md", {})
 
-  console.log(fileNameArray)
-
   let posts: Post[] = [];
 
   // use gray matter to get the title of each post
