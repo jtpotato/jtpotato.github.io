@@ -1,14 +1,7 @@
 import fs from "fs";
 import path from "path";
 import grayMatter from "gray-matter";
-
-type Post = {
-    title: string,
-    published: string,
-    edited: string,
-    content: string,
-    image?: string
-}
+import Post from "./TPost";
 
 function GetPosts() {
     let files: path.ParsedPath[] = [];

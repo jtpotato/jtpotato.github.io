@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -14,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='bg-black/95'>{children}</body>
     </html>
   )
 }
