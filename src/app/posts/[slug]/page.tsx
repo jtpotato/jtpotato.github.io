@@ -1,7 +1,7 @@
 import GetPostFromSlug from "@/lib/PostFromSlug";
 import RemoteMdxPage from "./MDXRemote";
-import "./markdown_styles.css"
 import GetPosts from "@/lib/Posts";
+import "./markdown_styles.css"
 
 export async function generateStaticParams() {
   const posts = GetPosts();
@@ -20,7 +20,9 @@ function PostPage({ params }: { params: { slug: string } }) {
           <p className="text-gray-500 m-0">Published {post?.published}</p>
           <p className="text-gray-500 m-0">Edited {post?.edited}</p>
           <div className="h-[1px] bg-gray-500 my-4" />
-          <RemoteMdxPage contents={post!.content} />
+          <div className="md">
+            <RemoteMdxPage contents={post!.content} />
+          </div>
         </div>
       </div>
     </>

@@ -1,39 +1,39 @@
-p {
+.md > p {
     @apply my-4
 }
 
-h1 {
+.md > h1 {
     @apply text-4xl font-bold mt-4
 }
-h2 {
+.md > h2 {
     @apply text-3xl font-bold mt-4
 }
-h3 {
+.md > h3 {
     @apply text-2xl font-bold mt-4
 }
-h4 {
+.md > h4 {
     @apply text-xl font-bold mt-4
 }
-h6 {
+.md > h6 {
     @apply text-lg font-bold mt-4
 }
 
-code {
+.md > code {
     @apply bg-neutral-800 font-mono
 }
 
-ul {
+.md > ul {
     @apply list-disc list-inside
 }
 
-p:has(> img) {
+.md > p:has(> img) {
     @apply my-8 
 }
 
-p:has(> img) > em {
+.md > p:has(> img) > em {
     @apply block text-center mt-1
 }
 
-a {
+.md > a {
     @apply underline
 }
