@@ -6,6 +6,8 @@ edited: 4-11-2023
 
 To procrastinate, I recently embarked on a project to create an AI writing tool that could generate Twitter threads more efficiently. However, what started as a simple experiment quickly turned into a dumpster fire of code plastered together.
 
+*This piece was written with the assistance of text-generation AI. It was not written with my own AI discussed in this piece.*
+
 ![This is fine…](https://cdn-images-1.medium.com/max/2000/1*7gQIHDGCpEocaUTpQBLpdw.jpeg)*This is fine…*
 
 The first obstacle I encountered when creating an AI writing tool was a lack of funds.
@@ -81,5 +83,3 @@ If I did want to showcase my design abilities, I’d make something like this: [
 For anyone who wants to check out my AI writing tool for themselves, you can find the source code on my GitHub page and try out the demo on the website.
 
 Despite the challenges I faced along the way, I’m proud of what I was able to create with my AI writing tool. By experimenting with different language models and using creative strategies to “trick” them into answering prompts, I was able to create a tool that can generate (questionable) writing very quickly.
-
-*This piece was written with the assistance of text-generation AI. It was not written with my own AI discussed in this piece.*

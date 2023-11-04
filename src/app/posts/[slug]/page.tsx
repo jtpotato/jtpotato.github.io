@@ -1,6 +1,14 @@
 import GetPostFromSlug from "@/lib/PostFromSlug";
 import RemoteMdxPage from "./MDXRemote";
 import "./markdown_styles.css"
+import GetPosts from "@/lib/Posts";
+
+export async function generateStaticParams() {
+  const posts = GetPosts();
+  return posts.map((post) => ({
+      slug: post.slug,
+  }));
+}
 
 function PostPage({ params }: { params: { slug: string } }) {
   const post = GetPostFromSlug(params.slug);
