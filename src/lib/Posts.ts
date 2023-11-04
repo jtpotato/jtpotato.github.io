@@ -16,6 +16,7 @@ function GetPosts() {
         let fileContents = fs.readFileSync(`posts/${file.base}`, "utf8");
         let { data, content } = grayMatter(fileContents);
         posts.push({
+            slug: file.name,
             title: data.title,
             published: data.published,
             edited: data.edited,

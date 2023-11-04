@@ -1,4 +1,5 @@
 type Post = {
+    slug: string,
     title: string,
     published: string,
     edited: string,
