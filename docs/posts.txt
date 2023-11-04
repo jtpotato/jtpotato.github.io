@@ -1,12 +1,12 @@
 1:HL["/_next/static/css/84cd147287099cee.css","style",{"crossOrigin":""}]
-0:["2KJlBqgjvLB2lAj7sJCXP",[[["",{"children":["posts",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/84cd147287099cee.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["HayZG-7WPV9Ot0pIwaB0t",[[["",{"children":["posts",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/84cd147287099cee.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[6954,[],""]
 5:I[7264,[],""]
 7:I[8326,["326","static/chunks/326-a244cdf3b150e525.js","991","static/chunks/app/posts/page-e90aa59caac74b76.js"],""]
-8:T1bb6,
+8:T1c10,
 To procrastinate, I recently embarked on a project to create an AI writing tool that could generate Twitter threads more efficiently. However, what started as a simple experiment quickly turned into a dumpster fire of code plastered together.
 
-*This piece was written with the assistance of text-generation AI. It was not written with my own AI discussed in this piece.*
+***Note from 4-11-2023:*** *This piece was written with text-generation AI. It obviously doesn't write in my voice. It's also kinda bad, but apparently I'm supposed to keep it here for archival purposes or something*
 
 ![This is fine…](https://cdn-images-1.medium.com/max/2000/1*7gQIHDGCpEocaUTpQBLpdw.jpeg)*This is fine…*
 

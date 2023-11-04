@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "mv out docs"
+    "deploy": "rm -rf docs && mv out docs"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.0",
