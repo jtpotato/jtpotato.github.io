@@ -9,7 +9,7 @@ type PostPreviewProps = {
 function PostPreview({ post }: PostPreviewProps) {
   return (
     <Link href={`/posts/${post.slug}`}>
-      <div className="p-4 border border-amber-100/20 bg-neutral-900">
+      <div className="py-4">
         <p className="font-bold">{post.title}</p>
         <p className="text-xs text-gray-500">{post.published}</p>
         <Description>{post.content}</Description>
