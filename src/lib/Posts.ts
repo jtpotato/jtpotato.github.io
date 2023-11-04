@@ -20,8 +20,11 @@ function GetPosts() {
     const published = new Date(data.published);
     const edited = new Date(data.edited);
 
+    // generate slug
+    const slug = path.parse(file).dir.slice(6) + "--" + path.parse(file).name;
+
     posts.push({
-      slug: path.parse(file).name,
+      slug: slug,
       title: data.title,
       published: published,
       edited: edited,
