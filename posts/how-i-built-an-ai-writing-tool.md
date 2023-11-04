@@ -1,7 +1,7 @@
 ---
 title: How I Built an AI Writing Tool
-published: 12-03-2023
-edited: 4-11-2023
+published: Mar 12 2023
+edited: Nov 4 2023
 ---
 
 To procrastinate, I recently embarked on a project to create an AI writing tool that could generate Twitter threads more efficiently. However, what started as a simple experiment quickly turned into a dumpster fire of code plastered together.

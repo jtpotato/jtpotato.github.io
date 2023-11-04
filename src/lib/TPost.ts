@@ -1,8 +1,8 @@
 type Post = {
     slug: string,
     title: string,
-    published: string,
-    edited: string,
+    published: Date,
+    edited: Date,
     content: string,
     image?: string
 }

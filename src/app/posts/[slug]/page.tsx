@@ -28,8 +28,8 @@ function PostPage({ params }: { params: { slug: string } }) {
 
           <h1 className="text-6xl font-bold mb-4">{post?.title}</h1>
           <div className="p-4 border-gray-500 border-y">
-            <p className="m-0 font-mono">Published: {post?.published}</p>
-            <p className="m-0 font-mono">Edited: {post?.edited}</p>
+            <p className="m-0 font-mono">Published: {post?.published.toDateString()}</p>
+            <p className="m-0 font-mono">Edited: {post?.edited.toDateString()}</p>
           </div>
 
           <div className="md">
