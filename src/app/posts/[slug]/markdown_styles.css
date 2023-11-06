@@ -1,5 +1,5 @@
 .md > p {
-    @apply my-4
+    @apply mb-4
 }
 
 .md > h1 {
@@ -34,6 +34,6 @@
     @apply block text-center mt-1
 }
 
-.md > a {
-    @apply underline
+.md > p > a {
+    @apply underline text-accent
 }

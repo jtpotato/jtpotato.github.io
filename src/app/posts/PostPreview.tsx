@@ -1,4 +1,4 @@
-import Post from "@/lib/TPost";
+import Post from "@/lib/posts/TPost";
 import Description from "./Description";
 import Link from "next/link";
 

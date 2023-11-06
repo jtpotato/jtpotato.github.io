@@ -1,4 +1,4 @@
-import GetPosts from "../../lib/Posts";
+import GetPosts from "../../lib/posts/Posts";
 import Description from "./Description";
 import PostPreview from "./PostPreview";
 
