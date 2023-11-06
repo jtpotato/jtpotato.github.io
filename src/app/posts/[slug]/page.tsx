@@ -35,17 +35,12 @@ function PostPage({ params }: { params: { slug: string } }) {
   const post = GetPostFromSlug(params.slug);
   return (
     <>
-      <div className="flex justify-center p-4">
-        <div className="max-w-2xl w-full p-4">
-          <div className="mb-2">
-            <Link href={"/posts"}>
-              <div className="underline flex space-x-4 text-text/50">
-                <p>See other posts</p>
-              </div>
-            </Link>
+      <div className="flex justify-center">
+        <div className="max-w-2xl w-full">
+          <div className="mb-8">
           </div>
 
-          <h1 className="text-6xl font-bold mb-4">{post?.title}</h1>
+          <h1 className="text-4xl sm:text-6xl font-bold my-4">{post?.title}</h1>
           <div className="p-4 border-gray-500 border-y my-4">
             <p className="m-0 font-mono">Published: {post?.published.toDateString()}</p>
             <p className="m-0 font-mono">Edited: {post?.edited.toDateString()}</p>
