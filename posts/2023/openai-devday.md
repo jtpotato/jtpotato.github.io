@@ -6,6 +6,11 @@ edited: Nov 7 2023
 
 *still being written*
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U9mJuUkhUzk?si=tPunt9Kpfml27q6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+OpenAI made a series of announcements.
+
 ### Key Takeaways
 - **ChatGPT-4 Turbo**: A new and improved version of their flagship language model, with larger memory, lower cost, new knowledge, and enhanced function calling capabilities.
 - **GPTs**: A new way to create customized chatbots for specific purposes, simply by talking to ChatGPT-4. For example, Canva built a GPT that can design posters based on user requests.
