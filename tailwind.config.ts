@@ -15,12 +15,12 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'text': '#fefefe',
-        'background': '#131313',
-        'primary': '#f7f5db',
-        'secondary': '#3d3d3d',
-        'accent': '#fcd75e',
-       },
+        'text': '#111f2a',
+        'background': '#f7f9fd',
+        'primary': '#cadcfc',
+        'secondary': '#b4c7e9',
+        'accent': '#1355c9',
+       },       
       fontFamily: {
         sans: ['Noto Sans', 'sans-serif'],
       }
