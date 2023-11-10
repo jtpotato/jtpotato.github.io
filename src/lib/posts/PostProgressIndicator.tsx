@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-function PostProgressIndicator() {
+function PostProgressIndicator({ slug }: { slug: string }) {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -13,9 +13,16 @@ function PostProgressIndicator() {
       const scrolled = (winScroll / height) * 100;
       console.log(scrolled)
       setProgress(scrolled);
-    } 
+      if (scrolled > Number(localStorage.getItem(`post-read-${slug}`))) {
+        console.log(scrolled)
+        localStorage.setItem(`post-read-${slug}`, String(scrolled));
+      }
+    }
 
     window.addEventListener("scroll", onScroll);
+
+    // clean up event listener
+    return () => window.removeEventListener("scroll", onScroll);
   }, [])
 
   return (

@@ -45,7 +45,7 @@ function PostPage({ params }: { params: { slug: string } }) {
                 <p>Back</p>
               </div>
             </Link>
-            <PostProgressIndicator />
+            <PostProgressIndicator slug={params.slug} />
           </div>
 
           <div className="mb-12">
