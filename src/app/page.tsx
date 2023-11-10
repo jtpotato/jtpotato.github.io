@@ -1,4 +1,3 @@
-import FancyBackground from "@/lib/homepage/FancyBackground";
 import Link from "next/link";
 
 export default function Home() {
