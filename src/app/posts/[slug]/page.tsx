@@ -37,7 +37,7 @@ function PostPage({ params }: { params: { slug: string } }) {
   return (
     <>
       <div className="flex justify-center">
-        <div className="max-w-2xl w-full">
+        <div className="p-4 max-w-2xl w-full">
           <div className="fixed top-0 left-0 w-full bg-background/50 backdrop-blur-md">
             <Link href="/posts">
               <div className="flex items-center space-x-4 p-4 ">
