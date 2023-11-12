@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Background from '@/lib/background/Background'
 
 export const metadata: Metadata = {
   title: 'jtpotato',
@@ -13,8 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='p-4'>
+      <body className=''>
         {children}
+        <Background />
       </body>
     </html>
   )

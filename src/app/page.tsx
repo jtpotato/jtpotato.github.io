@@ -7,7 +7,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <h1 className="text-6xl font-bold">Hi, I&apos;m Joel</h1>
           <div className="h-32"></div>
-          <div className="border border-black/50 p-4 px-8">
+          <div className="border border-lines p-4 px-8">
           <Link href="/posts">Posts</Link>
           </div>
 

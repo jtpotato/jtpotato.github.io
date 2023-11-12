@@ -27,7 +27,7 @@
 }
 
 .md > * > code {
-  @apply bg-secondary font-mono;
+  @apply font-mono;
 }
 
 .md > ul {

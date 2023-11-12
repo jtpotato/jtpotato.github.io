@@ -52,7 +52,7 @@ function PostPage({ params }: { params: { slug: string } }) {
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-bold my-4">{post?.title}</h1>
-          <div className="p-4 border-black/50 border-y my-4">
+          <div className="p-4 border-lines border-y my-4">
             <p className="m-0 font-mono">Published: {post?.published.toDateString()}</p>
             <p className="m-0 font-mono">Edited: {post?.edited.toDateString()}</p>
           </div>
