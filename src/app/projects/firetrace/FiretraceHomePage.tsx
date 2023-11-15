@@ -1,22 +1,18 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import TryNow from "./TryNow";
 import SlideIn from "./SlideIn";
 import { motion } from "framer-motion";
 import FiretraceBackground from "./FiretraceBackground";
+import styles from "./firetrace.module.css";
 
 function FiretraceHomePage() {
   return (
     <>
-      <FiretraceBackground />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet"
-      ></link>
-      <div className="flex flex-col items-center p-4">
+      <div className={styles.body}>
+        <FiretraceBackground />
+
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,7 +38,7 @@ function FiretraceHomePage() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.25 }}
           layout
         >
-          <h1 className="font-bold text-xl md:text-2xl">
+          <h1 className={`font-bold text-xl md:text-2xl`}>
             Open and Accessible Bushfire Model
           </h1>
         </motion.div>
@@ -66,7 +62,7 @@ function FiretraceHomePage() {
           </motion.div>
 
           <SlideIn direction="left">
-            <h2 className="text-6xl font-bold">For Everyone</h2>
+            <h2 className={styles.headings}>For Everyone</h2>
             <p>
               Historically, bushfire modelling has been a complex task,
               restricted to well-equipped scientific institutions, requiring
@@ -75,19 +71,18 @@ function FiretraceHomePage() {
               models themselves and generate their own insights.
               <br />
               <br />
-              <strong>Until now.</strong>
+              <strong className={styles.bold}>Until now.</strong>
               <br />
               <br />
-              Firetrace has been designed from the <strong>
-                ground-up
-              </strong>{" "}
-              specifically to ensure that the majority of people, without
-              specialisation in fire management, are able to use this tool.
+              Firetrace has been designed from the{" "}
+              <strong className={styles.bold}>ground-up</strong> specifically to
+              ensure that the majority of people, without specialisation in fire
+              management, are able to use this tool.
             </p>
           </SlideIn>
 
           <SlideIn direction="right">
-            <h2 className="font-bold">Free. Forever.</h2>
+            <h2 className={styles.headings}>Free. Forever.</h2>
             <p>
               We believe that any model pertaining to natural disasters and the
               safety of people, regardless of utility, should be free and open.
@@ -101,14 +96,13 @@ function FiretraceHomePage() {
           </SlideIn>
 
           <SlideIn direction="left">
-            <h2 className="font-bold md:text-6xl text-4xl">
-              A Breakthrough in Simplicity ✨
-            </h2>
+            <h2 className={styles.headings}>A Breakthrough in Simplicity ✨</h2>
             <p>
               As a result of our unwavering commitment to accessibility and ease
-              of use, Firetrace only requires <strong>4 inputs</strong> to
-              generate a prediction. These inputs (sometimes called "parameters"
-              or "factors") are easy to understand and conceptualise for people
+              of use, Firetrace only requires{" "}
+              <strong className={styles.bold}>4 inputs</strong> to generate a
+              prediction. These inputs (sometimes called "parameters" or
+              "factors") are easy to understand and conceptualise for people
               without specific education. Never before have we seen a model
               capable of generating remotely accurate<sup>1</sup> predictions
               without milliions of data points ranging over several weeks.
@@ -116,7 +110,7 @@ function FiretraceHomePage() {
           </SlideIn>
 
           <SlideIn direction="right">
-            <h2 className="md:text-6xl text-4xl">Trailblazing 🔥</h2>
+            <h2 className={styles.headings}>Trailblazing 🔥</h2>
             <p>
               Firetrace already pushes many boundaries in simplicity and
               accessibility, but we're not stopping there. We aim to continue
@@ -133,7 +127,8 @@ function FiretraceHomePage() {
             <p className="text-sm">
               <sup>1</sup> As accurate as Firetrace may be, it is not a magical
               fortune-telling machine 🔮, and the insights the tool provides are
-              quite limited. We <strong>strongly</strong> discourage using
+              quite limited. We{" "}
+              <strong className={styles.bold}>strongly</strong> discourage using
               Firetrace as a mission-critical prediction tool.
             </p>
             <br />
