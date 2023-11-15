@@ -6,8 +6,10 @@ import "./empty.css"
 function Projects() {
   return (
     <>
-      <div className="w-full flex justify-center items-center p-4">
+      <div className="w-full flex justify-center items-center p-4 md:py-8">
         <div className="max-w-2xl w-full">
+          <h1 className="font-bold text-4xl">Projects</h1>
+          <hr className="border-lines mt-4 mb-8"/>
           <Link href="/projects/firetrace">
             <div className="flex items-center space-x-2">
               <p className="text-2xl font-bold">Firetrace</p>
