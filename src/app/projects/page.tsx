@@ -1,8 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 
-import "./empty.css"
-
 function Projects() {
   return (
     <>
