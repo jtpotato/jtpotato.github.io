@@ -43,7 +43,7 @@ function FiretraceHomePage() {
           layout
         >
           <h1 className="font-bold text-xl md:text-2xl">
-            Continental-scale Bushfire Model
+            Free and Accessible Bushfire Model
           </h1>
         </motion.div>
         <div className="max-w-2xl w-full">
@@ -66,7 +66,7 @@ function FiretraceHomePage() {
           </motion.div>
 
           <SlideIn direction="left">
-            <h1 className="text-6xl font-bold">For Everyone</h1>
+            <h2 className="text-6xl font-bold">For Everyone</h2>
             <p>
               Historically, bushfire modelling has been a complex task,
               restricted to well-equipped scientific institutions, requiring
@@ -87,7 +87,7 @@ function FiretraceHomePage() {
           </SlideIn>
 
           <SlideIn direction="right">
-            <h1 className="font-bold">Free. Forever.</h1>
+            <h2 className="font-bold">Free. Forever.</h2>
             <p>
               We believe that any model pertaining to natural disasters and the
               safety of people, regardless of utility, should be free and open.
@@ -101,9 +101,9 @@ function FiretraceHomePage() {
           </SlideIn>
 
           <SlideIn direction="left">
-            <h1 className="font-bold md:text-6xl text-4xl">
+            <h2 className="font-bold md:text-6xl text-4xl">
               A Breakthrough in Simplicity ✨
-            </h1>
+            </h2>
             <p>
               As a result of our unwavering commitment to accessibility and ease
               of use, Firetrace only requires <strong>4 inputs</strong> to
@@ -116,7 +116,7 @@ function FiretraceHomePage() {
           </SlideIn>
 
           <SlideIn direction="right">
-            <h1 className="md:text-6xl text-4xl">Trailblazing 🔥</h1>
+            <h2 className="md:text-6xl text-4xl">Trailblazing 🔥</h2>
             <p>
               Firetrace already pushes many boundaries in simplicity and
               accessibility, but we're not stopping there. We aim to continue
