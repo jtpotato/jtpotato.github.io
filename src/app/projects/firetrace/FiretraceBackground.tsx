@@ -12,6 +12,7 @@ function FiretraceBackground() {
         const canvas = canvasRef.current;
         const context = canvas!.getContext("2d");
         context!.imageSmoothingEnabled = false;
+        context!.filter = "blur(10px)";
 
         let fires: { position: number[]; direction: number; size: number; speed: number; }[] = [];
 
