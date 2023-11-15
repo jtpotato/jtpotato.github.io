@@ -1,12 +1,22 @@
+import { Metadata } from "next";
 import "./firetrace.css";
 import FiretraceHomePage from "./FiretraceHomePage";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Firetrace | Simple continental-scale bushfire model",
   description:
-    "Firetrace is an AI model designed to predict the severity of Australian bushfires across the entire continent in a simple and easy to use manner.",
-  image:
-    "https://raw.githubusercontent.com/jtpotato/firetrace/main/assets/banner.svg",
+    "An AI model designed to predict the severity of Australian bushfires in a simple and easy to use manner.",
+  openGraph: {
+    title: "Firetrace | Simple continental-scale bushfire model",
+    description:
+      "An AI model designed to predict the severity of Australian bushfires in a simple and easy to use manner.",
+    siteName: "Firetrace",
+    images: [
+      {
+        url: "https://raw.githubusercontent.com/jtpotato/firetrace/main/assets/banner.svg",
+      },
+    ],
+  },
 };
 
 function FiretraceHome() {

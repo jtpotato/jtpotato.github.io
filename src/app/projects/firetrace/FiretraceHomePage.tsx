@@ -43,7 +43,7 @@ function FiretraceHomePage() {
           layout
         >
           <h1 className="font-bold text-xl md:text-2xl">
-            Free and Accessible Bushfire Model
+            Open and Accessible Bushfire Model
           </h1>
         </motion.div>
         <div className="max-w-2xl w-full">
