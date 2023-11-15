@@ -104,7 +104,7 @@ function FiretraceHome() {
           </SlideIn>
 
           <SlideIn direction="left">
-            <h1 className="font-bold">A Breakthrough in Simplicity ✨</h1>
+            <h1 className="font-bold md:text-6xl text-4xl">A Breakthrough in Simplicity ✨</h1>
             <p>
               As a result of our unwavering commitment to accessibility and ease
               of use, Firetrace only requires <strong>4 inputs</strong> to
