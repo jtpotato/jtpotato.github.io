@@ -4,12 +4,8 @@ body {
     font-weight: 600;
 }
 
-h1, h2, strong {
-    @apply text-neutral-300
-}
-
-h1 {
-    @apply text-6xl font-bold mb-4;
+h1, h2 {
+    @apply text-neutral-200 text-6xl font-bold mb-4;
 }
 
 strong {
