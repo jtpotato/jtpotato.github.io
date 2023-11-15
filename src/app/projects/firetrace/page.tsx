@@ -11,7 +11,13 @@ export const metadata = {
 
 function FiretraceHome() {
   return (
-    <FiretraceHomePage />
+    <>
+      <link
+        rel="canonical"
+        href="https://jtpotato.github.io/projects/firetrace/"
+      />
+      <FiretraceHomePage />
+    </>
   );
 }
 
