@@ -16,7 +16,7 @@ function SlideIn({
         initial={{ x: x, opacity: 0.1 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        viewport={{ amount: "all", once: true }}
+        viewport={{ amount: "some", once: true }}
         layout
       >
         {children}

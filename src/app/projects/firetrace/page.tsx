@@ -19,18 +19,18 @@ function FiretraceHome() {
         rel="stylesheet"
       ></link>
       <FiretraceBackground />
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center p-4">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.1 }}
           layout
         >
-          <div className="h-64" />
+          <div className="md:h-64" />
           <img
             src="https://raw.githubusercontent.com/jtpotato/firetrace/main/assets/banner-transparent.svg"
             alt="Firetrace"
-            style={{ width: "auto", height: "12em", objectFit: "cover" }}
+            style={{ width: "auto", height: "12em", objectFit: "contain", maxWidth: "250vw" }}
           />
         </motion.div>
 
@@ -40,11 +40,11 @@ function FiretraceHome() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.25 }}
           layout
         >
-          <h1 className="font-bold text-2xl">
+          <h1 className="font-bold text-xl md:text-2xl">
             Continental-scale Bushfire Model
           </h1>
         </motion.div>
-        <div className="max-w-2xl">
+        <div className="max-w-2xl w-full">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
