@@ -8,8 +8,13 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <h1 className="text-6xl font-bold">Hi, I&apos;m Joel</h1>
           <div className="h-32"></div>
-          <div className="border border-lines p-4 px-8">
-          <Link href="/posts">Posts</Link>
+          <div className="flex">
+            <div className="border border-lines border-l border-t border-b p-4 px-8">
+              <Link href="/projects">Projects</Link>
+            </div>
+            <div className="border border-lines p-4 px-8">
+              <Link href="/posts">Posts</Link>
+            </div>
           </div>
         </div>
       </div>
