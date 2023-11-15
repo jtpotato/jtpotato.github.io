@@ -2,6 +2,11 @@
 
 import { useEffect, useState } from "react";
 
+function clamp(val: number, min: number, max: number) {
+  return val > max ? max : val < min ? min : val;
+}
+
+
 function PostReadPercentage({ slug }: { slug: string }) {
   const [readPercentage, setReadPercentage] = useState(0);
 
@@ -17,7 +22,7 @@ function PostReadPercentage({ slug }: { slug: string }) {
   }, []);
   return (
     <>
-      <p>{readPercentage.toFixed(0)}% Read</p>
+      <p>{clamp(readPercentage, 0, 100).toFixed(0)}% Read</p>
     </>
   );
 }
