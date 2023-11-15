@@ -1,3 +1,4 @@
+import Background from "@/lib/background/Background";
 import Link from "next/link";
 
 export default function Home() {
@@ -10,9 +11,9 @@ export default function Home() {
           <div className="border border-lines p-4 px-8">
           <Link href="/posts">Posts</Link>
           </div>
-
         </div>
       </div>
+      <Background />
     </main>
   );
 }
