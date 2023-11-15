@@ -12,13 +12,13 @@ import FiretraceBackground from "./FiretraceBackground";
 function FiretraceHome() {
   return (
     <>
+      <FiretraceBackground />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet"
       ></link>
-      <FiretraceBackground />
       <div className="flex flex-col items-center p-4">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -30,7 +30,12 @@ function FiretraceHome() {
           <img
             src="https://raw.githubusercontent.com/jtpotato/firetrace/main/assets/banner-transparent.svg"
             alt="Firetrace"
-            style={{ width: "auto", height: "12em", objectFit: "contain", maxWidth: "250vw" }}
+            style={{
+              width: "auto",
+              height: "12em",
+              objectFit: "contain",
+              maxWidth: "250vw",
+            }}
           />
         </motion.div>
 

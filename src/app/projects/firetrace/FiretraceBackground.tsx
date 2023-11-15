@@ -75,7 +75,7 @@ function FiretraceBackground() {
   return (
     <>
       <div className="fixed -z-10 top-0 left-0 brightness-50">
-        <canvas ref={canvasRef} width="1600" height="900" className="w-screen h-screen"></canvas>
+        <canvas ref={canvasRef} width="1600" height="900" className="h-screen"></canvas>
       </div>
     </>
   );
