@@ -23,7 +23,8 @@ This post will be updated regularly with any changes to how I make/host this sit
 2. Use `next-mdx-remote` to parse into Next.js
 3. Use `gray-matter` to fetch data from frontmatter of each post
 
-![The frontmatter of this post!](https://file.notion.so/f/f/e8d97969-3eed-4a90-9b73-6c4687463df3/5a783955-158b-4a3b-b6a9-44b4839e2edf/Untitled.png)
+![The frontmatter of this post](https://github.com/jtpotato/jtpotato.github.io/assets/58995538/3a88153e-0c05-41ff-b20a-35398d3063c7)
+
 
 The frontmatter of this post!
 
@@ -32,7 +33,8 @@ The frontmatter of this post!
 
 # Firetrace Project Page
 
-![Firetrace Project Page](https://file.notion.so/f/f/e8d97969-3eed-4a90-9b73-6c4687463df3/0d03db2c-8da1-4a7e-9cdb-9c4443f59152/Untitled.png)
+![Firetrace Project Page](https://github.com/jtpotato/jtpotato.github.io/assets/58995538/91e22ed8-444d-4cde-9751-40fadde9d960)
+
 
 The first part of the landing page.
 
