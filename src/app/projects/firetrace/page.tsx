@@ -117,7 +117,7 @@ function FiretraceHome() {
           </SlideIn>
 
           <SlideIn direction="right">
-            <h1>Trailblazing 🔥</h1>
+            <h1 className="md:text-6xl text-4xl">Trailblazing 🔥</h1>
             <p>
               Firetrace already pushes many boundaries in simplicity and
               accessibility, but we're not stopping there. We aim to continue
