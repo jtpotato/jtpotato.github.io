@@ -1,7 +1,7 @@
 ---
 title: How This Blog Was Made
 published: Nov 5 2023
-edited: Nov 6 2023
+edited: Nov 18 2023
 ---
 This post will be updated regularly with any changes to how I make/host this site. This is a simple, high-level overview of how I did this - for specific implementation refer to https://github.com/jtpotato/jtpotato.github.io
 
@@ -9,13 +9,13 @@ This post will be updated regularly with any changes to how I make/host this sit
 
 - GitHub Pages
 - Next.js
+- framer-motion
+- TailwindCSS (we don't hate on Tailwind here)
 - Bun
 
 ### **Favicon**
 
-[GitHub Identicons!](https://github.blog/2013-08-14-identicons/)
-
-*oops, we're still writing this*
+[GitHub Identicons!](https://github.blog/2013-08-14-identicons/) Because I was running out of ideas and just wanted to get this site out as fast as possible.
 
 # Blog
 
@@ -28,8 +28,10 @@ This post will be updated regularly with any changes to how I make/host this sit
 
 The frontmatter of this post!
 
-1. Compose the post page - title, published/edited dates
-2. Apply styles (currently done through global css, should probably be changed at some point in the future)
+4. Compose the post page - title, published/edited dates
+5. Apply styles (currently done through global css, should probably be changed at some point in the future)
+
+MDX also affords us the opportunity to embed React components inside of the markdown, which could enable some cool things in the future. I've yet to find a use for it though.
 
 # Firetrace Project Page
 
@@ -42,3 +44,4 @@ https://jtpotato.github.io/projects/firetrace
 
 - `framer-motion` for animations
 - Blurred `<canvas>` background. Circles are given velocity and direction and constantly reprinted to canvas. Canvas is darkened after every frame to create a fade-out effect.
+- Velocity of circles is affected by user scroll.
