@@ -38,7 +38,7 @@ function FiretraceHomePage() {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.25 }}
           layout
         >
-          <h1 className={`font-bold text-xl md:text-2xl`}>
+          <h1 className={`font-bold text-xl md:text-2xl text-white`}>
             Open and Accessible Bushfire Model
           </h1>
         </motion.div>
