@@ -14,8 +14,8 @@ function ProjectCards() {
         rel="stylesheet"
       ></link>
       <div className="p-8 h-screen">
-        <div className="w-full h-full flex">
-          <div className="w-full h-full flex justify-center flex-col flex-1">
+        <div className="w-full md:h-full md:flex">
+          <div className="w-full h-full flex justify-center flex-col flex-1 mb-8 md:mb-0">
             <p className="ml-1">Introducing...</p>
             <h1 className="text-6xl font-bold">Project Cards ✨</h1>
           </div>
