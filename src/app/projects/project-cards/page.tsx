@@ -1,8 +1,18 @@
-"use client";
-
+import { Metadata } from "next";
 import ProjectCardMaker from "./ProjectCardMaker";
 import "./project-cards.css";
-import { motion, useScroll } from "framer-motion";
+
+export const metadata: Metadata = {
+  title: "Project Cards | Pretty project cards for GitHub",
+  description:
+    "Service that automagically generates pretty project cards.",
+  openGraph: {
+    title: "Project Cards | Pretty project cards for GitHub",
+    description:
+      "Service that automagically generates pretty project cards.",
+    siteName: "Project Cards",
+  },
+};
 
 function ProjectCards() {
   return (
