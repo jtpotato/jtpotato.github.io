@@ -11,6 +11,11 @@ const config: Config = {
       fontFamily: {
         body: ['var(--font-satoshi)', 'sans-serif'],
         display: ['var(--font-general-sans)', 'sans-serif']
+      },
+      colors: {
+        "background-dark": "#010101",
+        "background-light": "#fefefe",
+        "text-dark": "#eee"
       }
     },
   },
