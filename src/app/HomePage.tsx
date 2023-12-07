@@ -1,10 +1,21 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { animate, motion } from "framer-motion"
+import { GoChevronDown } from "react-icons/go";
 import WorkedWith from "./WorkedWith"
 import Footer from "./Footer"
+import ProjectsSection from "./ProjectsSection";
 
 export default function HomePage() {
+    function scrollDown() {
+        animate(0, window.innerHeight, {
+            duration: 1,
+            ease: "easeInOut",
+            onUpdate: (value) => {
+                window.scrollTo(0, value)
+            }
+        })
+    }
 
     return (
         <>
@@ -12,11 +23,17 @@ export default function HomePage() {
                 <div>
                     <p className="text-8xl font-display font-bold">I'm Joel</p>
                 </div>
-                <div className="absolute bottom-16">
+                <motion.div
+                    className="absolute bottom-16 flex flex-col items-center cursor-pointer"
+                    animate={{ y: [-10, 10], gap: ["0.5em", "1em"] }}
+                    transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+                    onClick={scrollDown}
+                >
                     <p>Keep Scrolling</p>
-                </div>
+                    <GoChevronDown />
+                </motion.div>
             </div>
-            <div className="p-4 text-lg font-body bg-background-light">
+            <div className="p-4 pt-8 text-lg font-body bg-background-light">
                 <div className="flex flex-col gap-y-4 max-w-4xl m-auto">
                     <h2 className="text-6xl font-display font-bold">About</h2>
                     <p>I'm a high school student (VCE 😰), developer and a content creator based in Melbourne, Australia.</p>
@@ -25,6 +42,7 @@ export default function HomePage() {
                 </div>
             </div>
             <WorkedWith />
+            <ProjectsSection />
             <Footer />
         </>
     )
