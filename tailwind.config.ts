@@ -4,7 +4,7 @@ const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -15,7 +15,10 @@ const config: Config = {
       colors: {
         "background-dark": "#010101",
         "background-light": "#fefefe",
-        "text-dark": "#eee"
+        "text-dark": "#eee",
+        "text-secondary-dark": "#555",
+        "text-secondary-light": "#aaa",
+        "boba": "#f7e7c8",
       }
     },
   },
