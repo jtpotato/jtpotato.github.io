@@ -16,7 +16,7 @@ const config: Config = {
         "background-dark": "#010101",
         "background-light": "#fefefe",
         "text-dark": "#eee",
-        "text-secondary-dark": "#555",
+        "text-secondary-dark": "var(--color-text-secondary-dark)",
         "text-secondary-light": "#aaa",
         "boba": "#f7e7c8",
       }

@@ -1,0 +1,16 @@
+.body {
+    @apply text-neutral-400 text-xl flex flex-col items-center p-4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    overflow-x: clip;
+    max-width: 100vw;
+}
+
+.headings {
+    @apply text-neutral-200 text-6xl font-bold mb-4;
+}
+
+.bold {
+    font-weight: 800;
+    @apply text-[#ffa202];
+}
