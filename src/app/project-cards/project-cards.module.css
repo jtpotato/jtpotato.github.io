@@ -1,0 +1,26 @@
+.input {
+    min-width: 16em;
+    box-shadow: 2px 2px 0.5em rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.button {
+    box-shadow: 2px 2px 0.5em rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    background-color: white;
+    transition: all 200ms;
+}
+
+.button:hover {
+    background-color: #f0f0f0;
+}
+
+.button:active {
+    background-color: #e0e0e0;
+}
+
+.label {
+    font-size: small;
+}
