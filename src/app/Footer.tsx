@@ -89,28 +89,28 @@ function Footer() {
                                 Full projects list
                             </BobaLink>
                         </Link>
-                        <Link href={""} target="_blank">
+                        <Link href={"/firetrace"} target="_blank">
                             <BobaLink>
                                 Firetrace
                             </BobaLink>
                         </Link>
-                        <Link href={""} target="_blank">
+                        <Link href={"/project-cards"} target="_blank">
                             <BobaLink>
                                 Project Cards
                             </BobaLink>
                         </Link>
                         <Link href={""} target="_blank">
-                            <BobaLink>
+                            <BobaLink disabled>
                                 Rhythm Game
                             </BobaLink>
                         </Link>
                         <Link href={""} target="_blank">
-                            <BobaLink>
+                            <BobaLink disabled>
                                 Buer
                             </BobaLink>
                         </Link>
                         <Link href={""} target="_blank">
-                            <BobaLink>
+                            <BobaLink disabled>
                                 Boba UI
                             </BobaLink>
                         </Link>

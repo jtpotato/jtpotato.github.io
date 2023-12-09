@@ -1,5 +1,6 @@
 import BobaChip from "@/lib/boba-ui/chip/BobaChip";
 import Image from "next/image";
+import Link from "next/link";
 
 function ProjectsSection() {
     return (<>
@@ -7,7 +8,7 @@ function ProjectsSection() {
             <div className="">
                 <h2 className="text-6xl font-display font-bold text-text-dark">Projects</h2>
                 <div className="grid grid-cols-3 grid-rows-2 my-8 gap-4">
-                    <div className="col-span-2 row-span-1 px-8 bg-background-light rounded-lg flex flex-row gap-4 justify-between items-center">
+                    <Link href="/project-cards" target="_blank" className="col-span-2 row-span-1 px-8 bg-background-light rounded-lg flex flex-row gap-4 justify-between items-center">
                         <div>
                             <div className="pt-20 pb-10">
                                 <h3 className="text-4xl font-display font-bold">Project Cards</h3>
@@ -29,8 +30,9 @@ function ProjectsSection() {
                             }} />
                         </div>
 
-                    </div>
-                    <div className="row-span-2 px-8 py-4 bg-background-light/10 text-text-dark rounded-lg">
+                    </Link>
+
+                    <Link href="/firetrace" target="_blank" className="row-span-2 px-8 py-4 bg-background-light/10 text-text-dark rounded-lg">
                         <div className="flex flex-col h-full">
                             <div className="relative h-32 w-full">
                                 <Image src="/home/firetrace.svg" fill className="object-contain" />
@@ -45,7 +47,7 @@ function ProjectsSection() {
                                 </BobaChip>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                     <div className="col-span-2 bg-background-light rounded-lg">
                         <div className="flex flex-col px-8 h-full">
                             <h3 className="text-4xl font-display font-bold mt-20">Buer</h3>
