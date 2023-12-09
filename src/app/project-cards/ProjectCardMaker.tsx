@@ -64,7 +64,7 @@ function ProjectCardMaker() {
           <div className="flex space-x-2">
             <input
               type="text"
-              className={styles.input + " flex-1"}
+              className={styles.input + " flex-1 font-mono text-sm text-text-dark bg-background-dark"}
               value={createURL(projectName, projectCodename, projectStarted)}
             />
             <button className={styles.button + " px-4"} onClick={() => {
