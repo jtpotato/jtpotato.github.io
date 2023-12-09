@@ -14,7 +14,7 @@ function ProjectsSection() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.2, duration: 1 }}
                     >
-                        <Link href="/project-cards" target="_blank" className="col-span-2 row-span-1 px-8 bg-background-light rounded-lg flex flex-row gap-4 justify-between items-center">
+                        <Link href="/projects/project-cards" target="_blank" className="col-span-2 row-span-1 px-8 bg-background-light rounded-lg flex flex-row gap-4 justify-between items-center">
                             <div>
                                 <div className="pt-20 pb-10">
                                     <h3 className="text-4xl font-display font-bold">Project Cards</h3>
@@ -40,7 +40,7 @@ function ProjectsSection() {
 
                     </motion.div>
 
-                    <Link href="/firetrace" target="_blank" className="row-span-2 px-8 py-4 bg-background-light/10 text-text-dark rounded-lg">
+                    <Link href="/projects/firetrace" target="_blank" className="row-span-2 px-8 py-4 bg-background-light/10 text-text-dark rounded-lg">
                         <div className="flex flex-col h-full">
                             <div className="relative h-32 w-full">
                                 <Image src="/home/firetrace.svg" fill className="object-contain" />
