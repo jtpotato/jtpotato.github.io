@@ -118,7 +118,7 @@ function Footer() {
                 </div>
                 <div>
                     <p>Your Timezone is <strong>{timeZone}</strong></p>
-                    <p>That's <strong>{hoursAhead}</strong></p>
+                    <p>That&apos;s <strong>{hoursAhead}</strong></p>
                     <p>My time: {myTime}</p>
                 </div>
             </div>

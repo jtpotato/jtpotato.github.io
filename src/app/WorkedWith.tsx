@@ -1,7 +1,7 @@
 function WorkedWith() {
     return (<>
         <div className="my-8 text-lg font-body max-w-4xl m-auto flex flex-col gap-y-4 bg-background-light">
-            <h2 className="text-4xl font-display font-bold">If you're curious, I've worked with:</h2>
+            <h2 className="text-4xl font-display font-bold">If you&apos;re curious, I&apos;ve worked with:</h2>
             <div className="grid grid-cols-2 m-auto gap-y-8">
                 <div>
                     <h3 className="text-4xl font-display font-bold">Web</h3>
