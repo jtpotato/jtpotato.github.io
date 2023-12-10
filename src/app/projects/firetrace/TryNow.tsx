@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { GoArrowUpRight } from "react-icons/go";
 import Link from "next/link";
 
 function TryNow() {
@@ -10,7 +10,7 @@ function TryNow() {
       >
         <button className="text-[#ffa202] flex items-center space-x-2">
           <p>Try Now</p>
-          <ArrowUpRight />
+          <GoArrowUpRight />
         </button>
       </Link>
     </div>

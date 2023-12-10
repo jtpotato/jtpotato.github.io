@@ -4,20 +4,21 @@ const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/lib/**/*.{js,ts,jsx,tsx,mdx}'
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
-      colors: {
-        'text': '#e0e0e0',
-        'background': '#090909',
-        'accent': '#f9f9f9',
-        'text-secondary': '#707070',
-        'lines': '#505050'
-       },       
       fontFamily: {
-        sans: ['sans-serif'],
+        body: ['var(--font-satoshi)', 'sans-serif'],
+        display: ['var(--font-general-sans)', 'sans-serif']
+      },
+      colors: {
+        "background-dark": "#010101",
+        "background-light": "#fefefe",
+        "text-dark": "#eee",
+        "text-secondary-dark": "var(--color-text-secondary-dark)",
+        "text-secondary-light": "#aaa",
+        "boba": "#f7e7c8",
       }
     },
   },

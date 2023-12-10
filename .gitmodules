@@ -1,0 +1,3 @@
+[submodule "src/lib/boba-ui"]
+	path = src/lib/boba-ui
+	url = https://github.com/jtpotato/boba-ui

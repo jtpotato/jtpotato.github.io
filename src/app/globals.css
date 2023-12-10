@@ -1,17 +1,10 @@
 @tailwind base;
-@layer base {
-  ul,
-  ol,
-  li {
-    list-style: revert;
-    margin: revert;
-    padding: revert;
-  }
-}
-
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-background text-text;
+/* Debug */
+* {
+  /* border: 0.5px solid red; */
+
+  --color-text-secondary-dark: #555;
 }

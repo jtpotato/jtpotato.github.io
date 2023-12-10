@@ -101,8 +101,8 @@ function FiretraceHomePage() {
               As a result of our unwavering commitment to accessibility and ease
               of use, Firetrace only requires{" "}
               <strong className={styles.bold}>4 inputs</strong> to generate a
-              prediction. These inputs (sometimes called "parameters" or
-              "factors") are easy to understand and conceptualise for people
+              prediction. These inputs (sometimes called &quot;parameters&quot; or
+              &quot;factors&quot;) are easy to understand and conceptualise for people
               without specific education. Never before have we seen a model
               capable of generating remotely accurate<sup>1</sup> predictions
               without milliions of data points ranging over several weeks.
@@ -113,7 +113,7 @@ function FiretraceHomePage() {
             <h2 className={styles.headings}>Trailblazing 🔥</h2>
             <p>
               Firetrace already pushes many boundaries in simplicity and
-              accessibility, but we're not stopping there. We aim to continue
+              accessibility, but we&apos;re not stopping there. We aim to continue
               innovating and introducing new architectures that enable features
               such as map visualisations, while continuing to embrace our core
               value of simplicity.
