@@ -89,12 +89,12 @@ function Footer() {
                                 Full projects list
                             </BobaLink>
                         </Link>
-                        <Link href={"/firetrace"} target="_blank">
+                        <Link href={"/projects/firetrace"} target="_blank">
                             <BobaLink>
                                 Firetrace
                             </BobaLink>
                         </Link>
-                        <Link href={"/project-cards"} target="_blank">
+                        <Link href={"/projects/project-cards"} target="_blank">
                             <BobaLink>
                                 Project Cards
                             </BobaLink>
