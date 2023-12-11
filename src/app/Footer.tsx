@@ -62,8 +62,13 @@ function Footer() {
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-xl font-display font-bold text-text-secondary-dark">Also Find Me On</h3>
+                    <h3 className="text-xl font-display font-bold text-text-secondary-dark">Also See</h3>
                     <div className="ml-4">
+                        <Link href={"/posts"} target="_blank">
+                            <BobaLink>
+                                Blog
+                            </BobaLink>
+                        </Link>
                         <Link href={"https://youtube.com/@jtpotato"} target="_blank">
                             <BobaLink>
                                 YouTube
