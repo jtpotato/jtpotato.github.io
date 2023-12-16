@@ -39,7 +39,7 @@ function Footer() {
     }, [])
 
     return (<>
-        <div className="bg-background-dark text-text-dark font-body p-16 relative">
+        <div className="text-text-dark font-body p-16 relative">
             <div className="grid grid-cols-4">
                 <div>
                     <h3 className="text-xl font-display font-bold text-text-secondary-dark">Contact</h3>

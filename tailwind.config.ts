@@ -13,12 +13,11 @@ const config: Config = {
         display: ['var(--font-general-sans)', 'sans-serif']
       },
       colors: {
-        "background-dark": "#010101",
-        "background-light": "#fefefe",
-        "text-dark": "#eee",
-        "text-secondary-dark": "var(--color-text-secondary-dark)",
-        "text-secondary-light": "#aaa",
-        "boba": "#f7e7c8",
+        "text-secondary": "var(--color-text-secondary)",
+        "text-primary": "var(--color-text-primary)",
+        "background-a": "var(--color-background-a)",
+        "background-b": "var(--color-background-b)",
+        "background-c": "var(--color-background-c)",
       }
     },
   },
