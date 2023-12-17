@@ -39,7 +39,7 @@ function Footer() {
     }, [])
 
     return (<>
-        <div className="bg-background-dark text-text-dark font-body p-16 relative">
+        <div className="text-text-dark font-body p-16 relative">
             <div className="grid grid-cols-4">
                 <div>
                     <h3 className="text-xl font-display font-bold text-text-secondary-dark">Contact</h3>
@@ -62,8 +62,13 @@ function Footer() {
                     </div>
                 </div>
                 <div>
-                    <h3 className="text-xl font-display font-bold text-text-secondary-dark">Also Find Me On</h3>
+                    <h3 className="text-xl font-display font-bold text-text-secondary-dark">Also See</h3>
                     <div className="ml-4">
+                        <Link href={"/posts"} target="_blank">
+                            <BobaLink>
+                                Blog
+                            </BobaLink>
+                        </Link>
                         <Link href={"https://youtube.com/@jtpotato"} target="_blank">
                             <BobaLink>
                                 YouTube
@@ -89,12 +94,12 @@ function Footer() {
                                 Full projects list
                             </BobaLink>
                         </Link>
-                        <Link href={"/firetrace"} target="_blank">
+                        <Link href={"/projects/firetrace"} target="_blank">
                             <BobaLink>
                                 Firetrace
                             </BobaLink>
                         </Link>
-                        <Link href={"/project-cards"} target="_blank">
+                        <Link href={"/projects/project-cards"} target="_blank">
                             <BobaLink>
                                 Project Cards
                             </BobaLink>

@@ -5,14 +5,14 @@ import Link from "next/link";
 
 function ProjectsSection() {
     return (<>
-        <div className="bg-background-dark p-8 font-body text-lg">
+        <div className="p-8 font-body text-lg text-text-primary">
             <div className="">
-                <h2 className="text-6xl font-display font-bold text-text-dark">Projects</h2>
+                <h2 className="text-6xl font-display font-bold">Projects</h2>
                 <div className="grid grid-cols-3 grid-rows-2 my-8 gap-4">
                     <motion.div className="col-span-2"
                         initial={{ opacity: 0, x: -200 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: 0.2, duration: 1 }}
+                        transition={{ delay: 0, duration: 1 }}
                     >
                         <Link href="/projects/project-cards" target="_blank" className="col-span-2 row-span-1 px-8 bg-background-light rounded-lg flex flex-row gap-4 justify-between items-center">
                             <div>
@@ -53,7 +53,7 @@ function ProjectsSection() {
                             }}
                             transition={{
                                 duration: 1,
-                                delay: 1,
+                                delay: 0,
                             }}
                         >
                             <div className="flex flex-col h-full">
@@ -78,15 +78,15 @@ function ProjectsSection() {
                         <motion.div className="bg-background-light rounded-lg h-full"
                             initial={{
                                 opacity: 0,
-                                x: -200
+                                y: 200
                             }}
                             whileInView={{
                                 opacity: 1,
-                                x: 0
+                                y: 0
                             }}
                             transition={{
                                 duration: 1,
-                                delay: 0.5
+                                delay: 0
                             }}
                         >
                             <div className="flex flex-col px-8 h-full">
