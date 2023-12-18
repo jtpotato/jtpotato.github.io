@@ -8,17 +8,22 @@ import AboutSection from "@/lib/home/sections/About";
 import { useEffect, useState } from "react";
 import Background from "@/lib/home/Background";
 import styles from "./home.module.css"
+import { MotionConfig } from "framer-motion";
+import Bowser from "bowser";
 
 export default function HomePage() {
     return (
         <>
             <div className={styles.homepage}>
-                <Background />
-                <NameCard />
-                <AboutSection />
-                <ProjectsSection />
-                <WorkedWith />
-                <Footer />
+                <MotionConfig reducedMotion={"user"}>
+                    <Background />
+                    <NameCard />
+                    <AboutSection />
+                    <ProjectsSection />
+                    <WorkedWith />
+                    <Footer />
+                </MotionConfig>
+
             </div>
 
         </>

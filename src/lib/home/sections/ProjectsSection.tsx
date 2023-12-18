@@ -3,8 +3,21 @@ import FuzzyCard from "@/lib/home/FuzzyCard";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { framerVariants } from "../FramerVariants";
+import { useEffect, useState } from "react";
+import Bowser from "bowser";
 
 function ProjectsSection() {
+    const [useAnim, setUseAnim] = useState(false);
+
+    useEffect(() => {
+        const browser = Bowser.getParser(window.navigator.userAgent);
+        if (browser.getEngineName() != "WebKit") {
+            setUseAnim(true);
+            console.log("Not WebKit")
+        }
+    }, [])
+
     return (<>
         <LazyMotion features={domAnimation}>
             <div className="p-8 font-body text-lg text-text-primary">
@@ -12,8 +25,9 @@ function ProjectsSection() {
                     <h2 className="text-6xl font-display font-bold">Projects</h2>
                     <div className="grid grid-cols-3 grid-rows-2 my-8 gap-4">
                         <m.div className="col-span-2"
-                            initial={{ opacity: 0, x: -200 }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                            variants={framerVariants}
+                            initial={useAnim ? "left" : "none"}
+                            whileInView="none"
                             transition={{ delay: 0, duration: 1 }}
                         >
                             <Link href="/projects/project-cards" target="_blank" className="col-span-2 row-span-1">
@@ -48,14 +62,9 @@ function ProjectsSection() {
 
                         <Link href="/projects/firetrace" target="_blank" className="content row-span-2">
                             <m.div className="row-span-2 w-full h-full"
-                                initial={{
-                                    opacity: 0,
-                                    y: -200
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0
-                                }}
+                                variants={framerVariants}
+                                initial={useAnim ? "right" : "none"}
+                                whileInView="none"
                                 transition={{
                                     duration: 1,
                                     delay: 0,
@@ -84,14 +93,9 @@ function ProjectsSection() {
 
                         <Link href="https://github.com/jtpotato/buer" target="_blank" className="col-span-2">
                             <m.div className="bg-background-light rounded-lg h-full"
-                                initial={{
-                                    opacity: 0,
-                                    y: 200
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0
-                                }}
+                                variants={framerVariants}
+                                initial={useAnim ? "left" : "none"}
+                                whileInView="none"
                                 transition={{
                                     duration: 1,
                                     delay: 0
