@@ -6,7 +6,3 @@
 * {
   /* border: 0.5px solid red; */
 }
-
-.text-text-primary, .text-text-secondary, .bg-background-a, .bg-background-b, .bg-background-c {
-  transition: color 1s linear, background-color 1s linear;
-}

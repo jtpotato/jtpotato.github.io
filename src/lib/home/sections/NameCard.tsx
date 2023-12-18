@@ -1,5 +1,4 @@
 import BobaChip from "@/lib/boba-ui/chip/BobaChip";
-import useHomeStore from "@/lib/home/HomeStore";
 import { animate, motion, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import { GoChevronDown } from "react-icons/go";
@@ -14,17 +13,6 @@ function NameCard() {
       }
     })
   }
-
-  const namecardRef = useRef(null)
-  const isInView = useInView(namecardRef, { amount: "all" })
-  const setTheme = useHomeStore(state => state.setTheme)
-
-  useEffect(() => {
-    if (isInView) {
-      console.log("Name Theme")
-      setTheme("name")
-    }
-  }, [isInView])
 
   return (<>
     <div className="flex justify-center items-center h-screen relative font-body text-text-primary">
@@ -45,7 +33,6 @@ function NameCard() {
         >
           I&apos;m Joel
         </motion.p>
-        <div ref={namecardRef} />
         <div className="flex flex-row gap-4 items-center mt-4 text-text-secondary">
           <BobaChip className="border-text-secondary-dark">Developer</BobaChip>
           <BobaChip className="border-text-secondary-dark">Melbourne &bull; Australia</BobaChip>

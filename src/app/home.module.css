@@ -1,0 +1,16 @@
+.homepage {
+  --color-text-primary: #fff;
+  --color-text-secondary: #979797;
+  --color-background-a: #000;
+  --color-background-b: #1f1d00cc;
+  --color-background-c: #1f1100cc;
+}
+
+.animate {
+  transition: all 1s ease-in-out;
+}
+
+.frombottom {
+  transform: translateY(100%);
+  opacity: 0;
+}
