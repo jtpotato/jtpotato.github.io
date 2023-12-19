@@ -8,16 +8,6 @@ import { useEffect, useState } from "react";
 import Bowser from "bowser";
 
 function ProjectsSection() {
-    const [useAnim, setUseAnim] = useState(false);
-
-    useEffect(() => {
-        const browser = Bowser.getParser(window.navigator.userAgent);
-        if (browser.getEngineName() != "WebKit") {
-            setUseAnim(true);
-            console.log("Not WebKit")
-        }
-    }, [])
-
     return (<>
         <LazyMotion features={domAnimation}>
             <div className="p-8 font-body text-lg text-text-primary">
@@ -26,9 +16,10 @@ function ProjectsSection() {
                     <div className="grid grid-cols-3 grid-rows-2 my-8 gap-4">
                         <m.div className="col-span-2"
                             variants={framerVariants}
-                            initial={useAnim ? "left" : "none"}
+                            initial={"left"}
                             whileInView="none"
                             transition={{ delay: 0, duration: 1 }}
+                            style={{ willChange: "transform" }}
                         >
                             <Link href="/projects/project-cards" target="_blank" className="col-span-2 row-span-1">
                                 <FuzzyCard>
@@ -63,12 +54,13 @@ function ProjectsSection() {
                         <Link href="/projects/firetrace" target="_blank" className="content row-span-2">
                             <m.div className="row-span-2 w-full h-full"
                                 variants={framerVariants}
-                                initial={useAnim ? "right" : "none"}
+                                initial={"right"}
                                 whileInView="none"
                                 transition={{
                                     duration: 1,
                                     delay: 0,
                                 }}
+                                style={{ willChange: "transform" }}
                             >
                                 <FuzzyCard>
                                     <div className="flex flex-col h-full p-4 px-8">
@@ -94,12 +86,13 @@ function ProjectsSection() {
                         <Link href="https://github.com/jtpotato/buer" target="_blank" className="col-span-2">
                             <m.div className="bg-background-light rounded-lg h-full"
                                 variants={framerVariants}
-                                initial={useAnim ? "left" : "none"}
+                                initial={"left"}
                                 whileInView="none"
                                 transition={{
                                     duration: 1,
                                     delay: 0
                                 }}
+                                style={{ willChange: "transform" }}
                             >
                                 <FuzzyCard>
                                     <div className="flex flex-col px-8 py-4 h-full gap-8">
