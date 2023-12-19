@@ -3,6 +3,9 @@ import FuzzyCard from "@/lib/home/FuzzyCard";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { framerVariants } from "../FramerVariants";
+import { useEffect, useState } from "react";
+import Bowser from "bowser";
 
 function ProjectsSection() {
     return (<>
@@ -12,9 +15,11 @@ function ProjectsSection() {
                     <h2 className="text-6xl font-display font-bold">Projects</h2>
                     <div className="grid grid-cols-3 grid-rows-2 my-8 gap-4">
                         <m.div className="col-span-2"
-                            initial={{ opacity: 0, x: -200 }}
-                            whileInView={{ opacity: 1, x: 0 }}
+                            variants={framerVariants}
+                            initial={"left"}
+                            whileInView="none"
                             transition={{ delay: 0, duration: 1 }}
+                            style={{ willChange: "transform" }}
                         >
                             <Link href="/projects/project-cards" target="_blank" className="col-span-2 row-span-1">
                                 <FuzzyCard>
@@ -48,18 +53,14 @@ function ProjectsSection() {
 
                         <Link href="/projects/firetrace" target="_blank" className="content row-span-2">
                             <m.div className="row-span-2 w-full h-full"
-                                initial={{
-                                    opacity: 0,
-                                    y: -200
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0
-                                }}
+                                variants={framerVariants}
+                                initial={"right"}
+                                whileInView="none"
                                 transition={{
                                     duration: 1,
                                     delay: 0,
                                 }}
+                                style={{ willChange: "transform" }}
                             >
                                 <FuzzyCard>
                                     <div className="flex flex-col h-full p-4 px-8">
@@ -84,18 +85,14 @@ function ProjectsSection() {
 
                         <Link href="https://github.com/jtpotato/buer" target="_blank" className="col-span-2">
                             <m.div className="bg-background-light rounded-lg h-full"
-                                initial={{
-                                    opacity: 0,
-                                    y: 200
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0
-                                }}
+                                variants={framerVariants}
+                                initial={"left"}
+                                whileInView="none"
                                 transition={{
                                     duration: 1,
                                     delay: 0
                                 }}
+                                style={{ willChange: "transform" }}
                             >
                                 <FuzzyCard>
                                     <div className="flex flex-col px-8 py-4 h-full gap-8">

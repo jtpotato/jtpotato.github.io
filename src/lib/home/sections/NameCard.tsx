@@ -40,15 +40,25 @@ function NameCard() {
           </div>
 
         </div>
-        <m.div
-          className="absolute bottom-16 flex flex-col items-center cursor-pointer"
-          animate={{ y: [-10, 10], gap: ["0.5em", "1em"] }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+        <div
+          className="absolute bottom-16 flex flex-col items-center cursor-pointer gap-4"
           onClick={scrollDown}
         >
-          <p>Keep Scrolling</p>
-          <GoChevronDown />
-        </m.div>
+          <m.div
+            animate={{ y: [-10, 10] }}
+            transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+            style={{ willChange: "transform" }}
+          >
+            <p>Keep Scrolling</p>
+          </m.div>
+          <m.div
+            animate={{ y: [-10, 10] }}
+            transition={{ duration: 2, repeat: Infinity, repeatType: "reverse", ease: "easeInOut", delay: 0.3 }}
+            style={{ willChange: "transform" }}>
+            <GoChevronDown />
+          </m.div>
+
+        </div>
       </div>
     </LazyMotion>
 
