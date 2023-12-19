@@ -1,6 +1,6 @@
 function AboutSection() {
   return (<>
-    <div className="p-4 text-lg font-body text-text-primary my-32">
+    <div className="p-8 text-lg font-body text-text-primary my-32">
       <div className="flex flex-col gap-y-4 max-w-4xl m-auto">
         <h2 className="text-6xl font-display font-bold">About</h2>
         <p>I&apos;m a high school student (VCE 😰), developer and a content creator based in Melbourne, Australia.</p>
