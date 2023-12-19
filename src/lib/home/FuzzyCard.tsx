@@ -1,8 +1,9 @@
 import { HTMLProps } from "react";
+import styles from "./glass.module.css"
 
 function FuzzyCard(props: HTMLProps<HTMLDivElement>) {
   return (<>
-    <div className="bg-[url('/home/noise.svg')] rounded-xl border border-white/30 bg-neutral-400/5 h-full">
+    <div className={styles.glassmain}>
       { props.children }
     </div>
   </>);

@@ -4,16 +4,6 @@ import { useEffect, useRef } from "react";
 import { GoChevronDown } from "react-icons/go";
 
 function NameCard() {
-  function scrollDown() {
-    animate(0, window.innerHeight, {
-      duration: 1,
-      ease: "easeInOut",
-      onUpdate: (value) => {
-        window.scrollTo(0, value)
-      }
-    })
-  }
-
   return (<>
     <LazyMotion features={domAnimation}>
       <div className="flex justify-center items-center h-screen relative font-body text-text-primary">
@@ -41,8 +31,7 @@ function NameCard() {
 
         </div>
         <div
-          className="absolute bottom-16 flex flex-col items-center cursor-pointer gap-4"
-          onClick={scrollDown}
+          className="absolute bottom-16 flex flex-col items-center gap-4"
         >
           <m.div
             animate={{ y: [-10, 10] }}

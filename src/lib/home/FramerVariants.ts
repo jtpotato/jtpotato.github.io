@@ -2,24 +2,25 @@ const framerVariants = {
   none: {
     opacity: 1,
     x: 0,
-    y: 0
+    y: 0,
+    z: 0,
+    transition: {
+      x: { duration: 1 },
+      y: { duration: 1 },
+    },
   },
   left: {
-    opacity: 0,
     x: -100,
   },
   right: {
-    opacity: 0,
     x: 100,
   },
   top: {
-    opacity: 0,
     y: -100,
   },
   bottom: {
-    opacity: 0,
     y: 100,
-  },
-}
+  }
+};
 
-export { framerVariants }
+export { framerVariants };
