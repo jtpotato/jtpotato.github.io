@@ -33,9 +33,9 @@
   grid-template-rows: repeat(var(--project-squares-rows), 1fr);
   height: 100%;
   width: 100%;
-  gap: 0.2em;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  gap: 0.1em;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
 }
 
 .blacksquares {

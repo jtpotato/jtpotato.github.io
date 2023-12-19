@@ -8,7 +8,7 @@ function ProjectsBackground() {
 
   const projectsBackgroundParent = useRef<HTMLDivElement>(null);
 
-  const squareSize = 124.5;
+  const squareSize = 100;
 
   const createTiles = (tiles: number) => {
     let newTiles = []
