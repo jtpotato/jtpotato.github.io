@@ -1,0 +1,10 @@
+.chip {
+  border: 0.5px solid #fff7;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+}
+
+.textsection {
+  max-width: 800px;
+  margin: 45px auto;
+}

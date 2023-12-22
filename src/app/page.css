@@ -10,9 +10,31 @@
   --text-size-5xl: 11.39rem;
   --bg-color: #000000;
   --text-primary: #fff;
+  --text-secondary: #b3b3b3;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-primary);
+}
+
+h1 {
+  font-size: var(--text-size-4xl);
+  margin: 0;
+}
+h2 {
+  font-size: var(--text-size-3xl);
+  margin: 0;
+}
+h3 {
+  font-size: var(--text-size-2xl);
+}
+h4 {
+  font-size: var(--text-size-xl);
+}
+h5 {
+  font-size: var(--text-size-lg);
+}
+p {
+  font-size: var(--text-size-md);
 }
