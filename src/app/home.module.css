@@ -1,9 +1,0 @@
-.homepage {
-  --color-text-primary: #f6f6f6;
-  --color-text-secondary: #979797;
-  --color-background-a: #060606;
-  --color-background-b: #1f1d00cc;
-  --color-background-c: #1f1100cc;
-
-  background-color: var(--color-background-a);
-}
