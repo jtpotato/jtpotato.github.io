@@ -1,19 +1,23 @@
 .projectsparent {
-  margin: 8em auto;
+  padding: 2em;
+}
+
+.projectspositioner {
   max-width: 1000px;
-  padding: 1em;
+  margin: auto;
 }
 
 .projectslist {
   margin: 2em 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 50% 50%;
   gap: 1em;
 }
 
 .taglist {
   color: var(--text-secondary);
   display: flex;
+  flex-wrap: wrap;
   gap: 1em;
 }
 
@@ -22,26 +26,29 @@
 }
 
 .projectcard {
-  padding: 2em;
-  background-color: #ffffff13;
-  border-radius: 15px;
+  padding: 2em 0;
+
   animation: projectCardAppear ease-in-out;
-  animation-timeline: view();
+  animation-timeline: view(var(--projectcard-inset));
+  animation-fill-mode: forwards;
   transform-style: preserve-3d;
   will-change: transform, opacity;
+
+  opacity: 0.5;
+  transform: translateY(50%);
 }
 
 @keyframes projectCardAppear {
   0% {
     opacity: 0.5;
-    /* transform: scale(0.95); */
+    transform: translateY(50%);
   }
   40%, 60% {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
   100% {
     opacity: 0.5;
-    /* transform: scale(0.95); */
+    transform: translateY(0);
   }
 }

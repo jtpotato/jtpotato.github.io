@@ -8,9 +8,10 @@
   --text-size-3xl: 5.06rem;
   --text-size-4xl: 7.59rem;
   --text-size-5xl: 11.39rem;
-  --bg-color: #000000;
-  --text-primary: #fff;
+  --bg-color: #090909;
+  --text-primary: #e8e8e8;
   --text-secondary: #b3b3b3;
+  --accent-a: #ecd2a8;
 }
 
 body {

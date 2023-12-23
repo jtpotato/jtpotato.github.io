@@ -1,6 +1,6 @@
 .abouttext {
   font-size: var(--text-size-lg);
-  margin: 50vh auto;
+  margin: 40vh auto;
 
   animation: aboutReveal ease-in-out;
   animation-timeline: view();
