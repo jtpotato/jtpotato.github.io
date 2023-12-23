@@ -11,8 +11,8 @@ function Projects() {
           <div className={styles.projectspin}>
             <h2>Projects</h2>
             <div className={styles.projectslist}>
-              {projectslist.map((project) => {
-                return <ProjectCard project={project} />;
+              {projectslist.map((project, index) => {
+                return <ProjectCard project={project} key={project} />;
               })}
               <h2
                 style={{
