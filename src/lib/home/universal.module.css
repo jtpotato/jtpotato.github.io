@@ -5,6 +5,7 @@
 }
 
 .textsection {
-  max-width: 800px;
-  margin: 45px auto;
+  margin: 8em auto;
+  padding: 1em;
+  max-width: 1000px;
 }

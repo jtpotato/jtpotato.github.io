@@ -1,0 +1,47 @@
+.projectsparent {
+  margin: 8em auto;
+  max-width: 1000px;
+  padding: 1em;
+}
+
+.projectslist {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.taglist {
+  color: var(--text-secondary);
+  display: flex;
+  gap: 1em;
+}
+
+.projectcard > h4 {
+  margin: 0;
+}
+
+.projectcard {
+  padding: 2em;
+  background-color: #ffffff13;
+  border-radius: 15px;
+  animation: projectCardAppear ease-in-out;
+  animation-timeline: view();
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
+
+@keyframes projectCardAppear {
+  0% {
+    opacity: 0.5;
+    /* transform: scale(0.95); */
+  }
+  40%, 60% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.5;
+    /* transform: scale(0.95); */
+  }
+}

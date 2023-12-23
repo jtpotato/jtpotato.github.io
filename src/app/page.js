@@ -2,6 +2,7 @@ import styles from "./page.module.css"
 import "./page.css"
 import NameCard from "@/lib/home/NameCard";
 import About from "@/lib/home/About";
+import Projects from "@/lib/home/projects/Projects";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <main>
         <NameCard />
         <About />
+        <Projects />
       </main>
     </>
   );
