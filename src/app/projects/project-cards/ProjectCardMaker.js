@@ -9,9 +9,9 @@ function ProjectCardMaker() {
   const [projectStarted, setProjectStarted] = useState("");
 
   function createURL(
-    projectName: string,
-    projectCodename: string,
-    projectStarted: string
+    projectName,
+    projectCodename,
+    projectStarted
   ) {
     return new URL(
       `https://project-cards.jtpotatodev.workers.dev/?project=${projectName}&started=${projectStarted}&codename=${projectCodename}`
@@ -20,9 +20,9 @@ function ProjectCardMaker() {
 
   return (
     <>
-      <div>
-        <div className="flex flex-wrap gap-4">
-          <div className="flex flex-col flex-1">
+      <div className={styles.projectCardMaker}>
+        <div className={styles.inputSection}>
+          <div>
             <label className={styles.label}>Project Name</label>
             <input
               type="text"
@@ -31,7 +31,7 @@ function ProjectCardMaker() {
             />
           </div>
 
-          <div className="flex flex-col flex-1">
+          <div>
             <label className={styles.label}>Codename</label>
             <input
               type="text"
@@ -40,7 +40,7 @@ function ProjectCardMaker() {
             />
           </div>
 
-          <div className="flex flex-col flex-1">
+          <div>
             <label className={styles.label}>Date Started</label>
             <input
               type="date"
@@ -59,15 +59,15 @@ function ProjectCardMaker() {
             />
           </div>
         </div>
-        <div className="flex flex-col mt-4">
+        <div style={{ marginTop: "2em", width: "100%" }}>
           <label className={styles.label}>Project Card Link</label>
-          <div className="flex space-x-2">
+          <div className={styles.outputBox}>
             <input
               type="text"
-              className={styles.input + " flex-1 font-mono text-sm text-text-dark bg-background-dark"}
+              className={styles.input + " " + styles.outputTextField}
               value={createURL(projectName, projectCodename, projectStarted)}
             />
-            <button className={styles.button + " px-4"} onClick={() => {
+            <button className={styles.button} onClick={() => {
                 navigator.clipboard.writeText(createURL(projectName, projectCodename, projectStarted))
             }}>
               <svg

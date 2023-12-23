@@ -1,8 +1,0 @@
-.glassmain {
-  backdrop-filter: blur(10px);
-  border-radius: 30px;
-  height: 100%;
-  background: linear-gradient(135deg, #ffffff27, #ffffff0f);
-  border: 1px solid #ffffff27;
-  box-shadow: 10px 10px 5px #00000030;
-}
