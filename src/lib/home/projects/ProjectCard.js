@@ -32,7 +32,7 @@ function ProjectCard(props) {
 
   return (
     <>
-      <div className={styles.projectcard} ref={projectCardRef} style={isOnRight ? {"--projectcard-inset": "-20% 20%"} : {"--projectcard-inset": "0%"}}>
+      <div className={styles.projectcard} ref={projectCardRef} style={isOnRight ? {"--projectcard-inset": "-30% 30%"} : {"--projectcard-inset": "0%"}}>
         <h4>{props.project.title}</h4>
         <p>{props.project.year}</p>
         <p>{props.project.description}</p>

@@ -9,9 +9,13 @@
 
 .projectslist {
   margin: 2em 0;
-  display: grid;
-  grid-template-columns: 50% 50%;
   gap: 1em;
+}
+@media (width: 800px) {
+  .projectslist {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 }
 
 .taglist {
@@ -31,7 +35,6 @@
   animation: projectCardAppear ease-in-out;
   animation-timeline: view(var(--projectcard-inset));
   animation-fill-mode: forwards;
-  transform-style: preserve-3d;
   will-change: transform, opacity;
 
   opacity: 0.5;
@@ -43,7 +46,8 @@
     opacity: 0.5;
     transform: translateY(50%);
   }
-  40%, 60% {
+  40%,
+  60% {
     opacity: 1;
     transform: translateY(0);
   }
