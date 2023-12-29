@@ -9,9 +9,9 @@ function ProjectCardMaker() {
   const [projectStarted, setProjectStarted] = useState("");
 
   function createURL(
-    projectName,
-    projectCodename,
-    projectStarted
+    projectName: string,
+    projectCodename: string,
+    projectStarted: string
   ) {
     return new URL(
       `https://project-cards.jtpotatodev.workers.dev/?project=${projectName}&started=${projectStarted}&codename=${projectCodename}`

@@ -24,7 +24,7 @@ function ProjectCards() {
           <div>
             <div>
               <p>They look a bit like this.</p>
-              <img src="https://project-cards.jtpotatodev.workers.dev/?project=jtpotato/project-cards&started=2%20Dec%202023&codename=Alexandra"></img>
+              <img src="https://project-cards.jtpotatodev.workers.dev/?project=jtpotato/project-cards&started=2%20Dec%202023&codename=Alexandra" alt="An example of a project card."></img>
             </div>
             <div>
               <h5>Make your own: </h5>
