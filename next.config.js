@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: "/posts",
-        destination: "https://jtpotato-posts.netlify.app/posts"
+        destination: "https://jtpotato-posts.vercel.app/posts"
       }
     ]
   }
