@@ -12,11 +12,11 @@ const nextConfig = {
       },
       {
         source: '/genshin-visions',
-        destination: 'https:/jtpotato-genshin-visions.vercel.app/genshin-visions'
+        destination: 'https://jtpotato-genshin-visions.vercel.app/genshin-visions'
       },
       {
         source: '/genshin-visions/:content*',
-        destination: 'https:/jtpotato-genshin-visions.vercel.app/genshin-visions/:content*'
+        destination: 'https://jtpotato-genshin-visions.vercel.app/genshin-visions/:content*'
       },
     ]
   }
