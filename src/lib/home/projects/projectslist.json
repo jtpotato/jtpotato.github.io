@@ -142,5 +142,11 @@
     "title": "leucas",
     "description": "Generate Beluga-like Discord conversations using webhooks.",
     "tags": ["Swift", "Discord"]
+  },
+  {
+    "year": "2023",
+    "title": "unstrand",
+    "description": "Chrome Extension to display the amount of time you've spent on a site - live.",
+    "tags": ["Chrome Extension", "TypeScript", "Plasmo"]
   }
 ]
