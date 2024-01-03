@@ -19,6 +19,6 @@ function generateRewrites(rewriteObject) {
   return rewrites
 }
 
-module.exports = {
+export default {
   generateRewrites
 }
