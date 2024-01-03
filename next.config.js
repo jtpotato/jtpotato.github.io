@@ -19,6 +19,10 @@ const nextConfig = {
         destination: 'https://jtpotato-genshin-visions.vercel.app/genshin-visions/:content*'
       },
       {
+        source: '/projects',
+        destination: 'https://jtpotato-projects-page.vercel.app/projects'
+      },
+      {
         source: '/projects/:content*',
         destination: 'https://jtpotato-projects-page.vercel.app/projects/:content*'
       },
