@@ -1,4 +1,4 @@
-import generateRewritesModule from "./src/lib/rewrites/generateRewrites.js";
+import generateRewritesModule from "./src/lib/rewrites/generateRewrites.mjs";
 import rewriteJson from "./src/lib/rewrites/rewrites.json" assert { type: 'json' };
 
 const { generateRewrites } = generateRewritesModule

@@ -1,4 +1,4 @@
-function generateRewrites(rewriteObject) {
+export function generateRewrites(rewriteObject) {
   let rewrites = [];
   /** @type {[string, string]} */
   const entries = Object.entries(rewriteObject);
@@ -17,8 +17,4 @@ function generateRewrites(rewriteObject) {
   });
 
   return rewrites
-}
-
-export default {
-  generateRewrites
 }
