@@ -1,4 +1,4 @@
-import { generateRewrites } from "./src/lib/rewrites/generateRewrites.mjs";
+import { generateRewrites } from "./src/lib/rewrites/generateRewrites.js";
 import rewriteJson from "./src/lib/rewrites/rewrites.json" assert { type: 'json' };;
 
 /** @type {import('next').NextConfig} */

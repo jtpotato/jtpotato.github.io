@@ -1,5 +1,5 @@
 import { expect, test } from "bun:test";
-import { generateRewrites } from "./generateRewrites.mjs";
+import { generateRewrites } from "./generateRewrites.js";
 
 test("Generates correct rewrites", () => {
   expect(
