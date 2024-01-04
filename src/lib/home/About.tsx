@@ -20,9 +20,6 @@ function About() {
           various areas of software engineering, such as the web, mobile, mixed
           reality and artificial intelligence 🤓
         </p>
-        <p className={styles.abouttext}>
-          This site includes a non-comprehensive list of projects. Keep scrolling 😊
-        </p>
       </div>
     </>
   );

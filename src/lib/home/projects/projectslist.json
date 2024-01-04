@@ -123,12 +123,14 @@
     "year": "2023",
     "title": "Firetrace 🔥",
     "description": "Bushfire prediction that regular people can use. For Australia.",
-    "tags": ["Team Project", "Python", "TensorFlow", "PyTorch", "HuggingFace"]
+    "tags": ["Team Project", "Python", "TensorFlow", "PyTorch", "HuggingFace"],
+    "link": "/projects/firetrace"
   },
   {
     "year": "2023",
     "title": "Project Cards",
     "description": "Generate pretty project cards for your project.",
+    "link": "/projects/project-cards",
     "tags": ["Cloudflare Workers", "TypeScript"]
   },
   {

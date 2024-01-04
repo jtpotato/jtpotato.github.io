@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import universal from "../universal.module.css";
 import styles from "./projects.module.css";
+import Link from "next/link";
 
 function ProjectCard(props) {
   const [isOnRight, setIsOnRight] = useState(false);
@@ -32,10 +33,16 @@ function ProjectCard(props) {
 
   return (
     <>
-      <div className={styles.projectcard} ref={projectCardRef} style={isOnRight ? { "--projectcard-inset": "-30% 30%" } as React.CSSProperties : { "--projectcard-inset": "0%" } as React.CSSProperties}>
+      <div className={styles.projectcard + " flex flex-col gap-2"} ref={projectCardRef} style={isOnRight ? { "--projectcard-inset": "-30% 30%" } as React.CSSProperties : { "--projectcard-inset": "0%" } as React.CSSProperties}>
         <h4>{props.project.title}</h4>
         <p>{props.project.year}</p>
         <p>{props.project.description}</p>
+        <div className="my-2">
+          {
+            props.project.link ? <Link href={props.project.link} target="_blank" className="p-1 px-2 bg-neutral-800 w-fit rounded-md">Link 🔗</Link> : <></>
+          }
+        </div>
+
         <div className={styles.taglist}>
           {props.project.tags.map((tag) => (
             <>
