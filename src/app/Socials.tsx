@@ -16,7 +16,7 @@ function Socials() {
       <div className="flex gap-4">
         {
           Object.entries(socialsList).map((entry) => (
-            <Link href={entry[1]} target="_blank" className="bg-[#ecd2a832] text-[#ecd2a8] w-fit px-4 py-2 rounded-full">{entry[0]}</Link>
+            <Link href={entry[1]} target="_blank" className="bg-[#ecd2a832] text-[#ecd2a8] w-fit px-4 py-2 rounded-full" key={entry[0]}>{entry[0]}</Link>
           ))
         }
       </div>
