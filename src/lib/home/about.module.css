@@ -1,5 +1,5 @@
 .abouttext {
-  font-size: var(--text-size-lg);
+  @apply text-lg;
   margin: 40vh auto;
 
   animation: aboutReveal ease-in-out;

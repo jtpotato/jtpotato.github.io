@@ -8,7 +8,7 @@ function NameCard() {
         <div className={styles.background}>
         </div>
         <div>
-          <h1 className={styles.name + " text-4xl"}>I'm Joel</h1>
+          <h1 className={styles.name + " text-8xl font-bold mb-2"}>I'm Joel</h1>
           <div className={styles.aboutchips}>
             <span className={universal.chip}>Student</span>
             <span className={universal.chip}>Developer</span>

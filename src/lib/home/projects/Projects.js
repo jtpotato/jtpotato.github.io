@@ -9,7 +9,7 @@ function Projects() {
       <div className={styles.projectsparent}>
         <div className={styles.projectspositioner}>
           <div className={styles.projectspin}>
-            <h2>Projects</h2>
+            <h2 className="text-6xl">Projects</h2>
             <div className={styles.projectslist}>
               {projectslist.toReversed().map((project) => {
                 return <ProjectCard project={project} />;

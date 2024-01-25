@@ -33,9 +33,9 @@ function ProjectCard(props) {
   return (
     <>
       <div className={styles.projectcard} ref={projectCardRef} style={isOnRight ? {"--projectcard-inset": "-30% 30%"} : {"--projectcard-inset": "0%"}}>
-        <h4>{props.project.title}</h4>
-        <p>{props.project.year}</p>
-        <p>{props.project.description}</p>
+        <h4 className="text-2xl">{props.project.title}</h4>
+        <p className="text-sm">{props.project.year}</p>
+        <p className="my-4">{props.project.description}</p>
         <div className={styles.taglist}>
           {props.project.tags.map((tag) => (
             <>
