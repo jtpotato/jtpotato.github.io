@@ -8,7 +8,6 @@
 }
 
 .name {
-  font-size: var(--text-size-4xl);
   animation: fadeInUp 0.5s ease-out;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;

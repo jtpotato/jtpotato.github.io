@@ -11,7 +11,7 @@ function Projects() {
           <div className={styles.projectspin}>
             <h2>Projects</h2>
             <div className={styles.projectslist}>
-              {projectslist.map((project) => {
+              {projectslist.toReversed().map((project) => {
                 return <ProjectCard project={project} />;
               })}
               <h2
