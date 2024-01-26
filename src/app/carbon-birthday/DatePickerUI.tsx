@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import { DatePicker } from "./DatePickerComponent";
+import CarbonCalculator from "./CarbonCalculator";
 
 function DatePickerUI() {
-  const [date, setDate] = useState<Date>()
+  const [year, setYear] = useState<number>()
 
   return (<>
-    <DatePicker date={date} setDate={setDate} />
+    <DatePicker setDate={setYear} />
+    <CarbonCalculator year={year} />
   </>);
 }
 
