@@ -1,23 +1,27 @@
-import { Inter } from "next/font/google";
+import type { Metadata } from "next";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import "./native-ish.css";
+import VersionNumber from "@/app/VersionNumber";
+import Footer from "@/app/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "jtpotato",
-  description: "My personal site. Welcome!",
+export const metadata: Metadata = {
+  title: "jtpotato's site",
+  description: "im not sure why you would read this just click the link",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={spaceGrotesk.className}>
         {children}
-        <script
-          defer
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon='{"token": "328e28981c8044cca1b839a09b0e30d1"}'
-        ></script>
+        <Footer />
       </body>
     </html>
   );
