@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import "./native-ish.css";
-import VersionNumber from "@/lib/VersionNumber";
+import VersionNumber from "@/app/VersionNumber";
+import Footer from "@/app/Footer";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={spaceGrotesk.className}>
         {children}
-        <VersionNumber />
+        <Footer />
       </body>
     </html>
   );

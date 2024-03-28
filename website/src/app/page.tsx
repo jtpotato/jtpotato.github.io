@@ -1,3 +1,5 @@
+import Highlight from "./Highlight";
+
 export default function Home() {
 
   return (
@@ -12,6 +14,13 @@ export default function Home() {
           My programming journey started in 2015 with a 3 day gamedev program.
           Nearly 10 years later, I'm somehow still at it.
         </p>
+        <br />
+        <h2 className="text-2xl animate-fadein-up [--fadein-delay:1200ms]">Highlights</h2>
+        <div className="flex gap-4">
+          <Highlight repoURL="https://github.com/jtpotato/autocut" className="animate-fadein-up [--fadein-delay:1300ms]" />
+          <Highlight repoURL="https://github.com/jtpotato/firetrace" className="animate-fadein-up [--fadein-delay:1400ms]" />
+          <Highlight repoURL="https://github.com/jtpotato/project-cards" className="animate-fadein-up [--fadein-delay:1500ms]" />
+        </div>
       </main>
     </div>
   );
