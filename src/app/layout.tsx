@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
-import "./native-ish.css";
 import VersionNumber from "@/app/VersionNumber";
 import Footer from "@/app/Footer";
 

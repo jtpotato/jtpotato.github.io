@@ -1,4 +1,3 @@
-import { FadeDown, FadeUp } from "./src/lib/animations/Fade";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -16,16 +15,6 @@ const config: Config = {
       },
       colors: {
         secondary: "#808080",
-      },
-      keyframes: {
-        "fadein-down": FadeDown,
-        "fadein-up": FadeUp,
-      },
-      animation: {
-        "fadein-down":
-          "fadein-down 0.5s ease-out var(--fadein-delay, 0ms) backwards",
-        "fadein-up":
-          "fadein-up 0.5s ease-out var(--fadein-delay, 0ms) backwards",
       },
     },
   },
