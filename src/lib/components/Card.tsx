@@ -5,7 +5,7 @@ function Card(props: PropsWithChildren<HTMLAttributes<HTMLDivElement>>) {
   return (
     <>
       <div
-        className="rounded-lg border border-black/10 bg-gradient-to-br from-white/10 to-black/10 p-4"
+        className="rounded-lg border border-black/10 p-4 shadow-sm transition-all duration-200 hover:shadow-md"
         {...props}
       >
         {props.children}

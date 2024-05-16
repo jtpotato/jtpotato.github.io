@@ -5,16 +5,16 @@ interface HighlightProps extends HTMLAttributes<HTMLAnchorElement> {
   repoURL: string;
 }
 
-function Highlight(props: HighlightProps) {
-  const repoURL = props.repoURL;
+function RepoHighlight(props: HighlightProps) {
+  const { repoURL, ...passProps } = props;
   const repoName = repoURL.split("/").slice(-2).join("/");
   return (
     <>
-      <a href={repoURL} target="_blank" {...props}>
+      <a href={repoURL} target="_blank" {...passProps}>
         <Card>{repoName}</Card>
       </a>
     </>
   );
 }
 
-export default Highlight;
+export default RepoHighlight;

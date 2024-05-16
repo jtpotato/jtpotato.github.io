@@ -3,25 +3,20 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <footer className="border-t text-sm text-secondary">
+      <footer className="text-secondary border-t text-sm">
         <div className="m-auto max-w-4xl p-4 py-8">
           <div className="flex gap-32">
             <div>
               <h5 className="mb-4 font-bold uppercase text-black/60">
                 projects
               </h5>
-              <Link href="/tools/project-cards">
-                <p>Project Card Generator</p>
-              </Link>
-              <Link href="/genshin-visions">
-                <p>Genshin Vision Calculator</p>
-              </Link>
+              <p>Coming soon...</p>
             </div>
             <div>
               <h5 className="mb-4 font-bold uppercase text-black/60">
                 Version
               </h5>
-              <p>v2024.3.28</p>
+              <p>v2024.5.16</p>
             </div>
           </div>
         </div>

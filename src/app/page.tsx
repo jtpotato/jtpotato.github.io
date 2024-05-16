@@ -1,34 +1,21 @@
-import Highlight from "./Highlight";
+import RepoHighlight from "../lib/components/RepoHighlight";
 
 export default function Home() {
   return (
-    <div className="flex h-screen items-center justify-center">
-      <main className="m-auto flex max-w-4xl flex-col gap-4 p-4">
-        <h1 className="animate-fadein-down text-6xl">Hi, I'm Joel</h1>
-        <p className="animate-fadein-down [--fadein-delay:500ms]">
+    <div className="flex items-center justify-center">
+      <main className="m-auto flex max-w-4xl flex-col gap-4 p-4 md:py-32">
+        <h1 className="text-6xl">Hi, I'm Joel</h1>
+        <p>
           I'm a high school student, developer and a content creator based in
           Melbourne, Australia.
         </p>
-        <p className="animate-fadein-down [--fadein-delay:1000ms]">
-          Playing with computer things since 2015.
-        </p>
+        <p>Playing with computer things since 2015.</p>
         <br />
-        <h2 className="animate-fadein-up text-2xl [--fadein-delay:1200ms]">
-          Highlights
-        </h2>
+        <h2 className="text-lg font-bold">Highlights</h2>
         <div className="flex gap-4">
-          <Highlight
-            repoURL="https://github.com/jtpotato/autocut"
-            className="animate-fadein-up [--fadein-delay:1300ms]"
-          />
-          <Highlight
-            repoURL="https://github.com/jtpotato/firetrace"
-            className="animate-fadein-up [--fadein-delay:1400ms]"
-          />
-          <Highlight
-            repoURL="https://github.com/jtpotato/project-cards"
-            className="animate-fadein-up [--fadein-delay:1500ms]"
-          />
+          <RepoHighlight repoURL="https://github.com/jtpotato/autocut" />
+          <RepoHighlight repoURL="https://github.com/jtpotato/firetrace" />
+          <RepoHighlight repoURL="https://github.com/jtpotato/project-cards" />
         </div>
       </main>
     </div>
