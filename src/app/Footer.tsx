@@ -3,20 +3,20 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <footer className="text-secondary border-t text-sm">
+      <footer className="border-t text-sm text-muted-foreground">
         <div className="m-auto max-w-4xl p-4 py-8">
           <div className="flex gap-32">
             <div>
-              <h5 className="mb-4 font-bold uppercase text-black/60">
+              <h5 className="mb-4 font-bold uppercase text-secondary-foreground">
                 projects
               </h5>
               <p>Coming soon...</p>
             </div>
             <div>
-              <h5 className="mb-4 font-bold uppercase text-black/60">
+              <h5 className="mb-4 font-bold uppercase text-secondary-foreground">
                 Version
               </h5>
-              <p>v2024.5.16</p>
+              <p>v2024.5.17</p>
             </div>
           </div>
         </div>

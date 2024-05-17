@@ -1,4 +1,5 @@
-import RepoHighlight from "../lib/components/RepoHighlight";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -10,12 +11,13 @@ export default function Home() {
           Melbourne, Australia.
         </p>
         <p>Playing with computer things since 2015.</p>
-        <br />
-        <h2 className="text-lg font-bold">Highlights</h2>
-        <div className="flex gap-4">
-          <RepoHighlight repoURL="https://github.com/jtpotato/autocut" />
-          <RepoHighlight repoURL="https://github.com/jtpotato/firetrace" />
-          <RepoHighlight repoURL="https://github.com/jtpotato/project-cards" />
+        <h2 className="font-bold">Links</h2>
+        <div className="flex h-6 gap-4">
+          <a href="https://github.com/jtpotato>">GitHub</a>
+          <Separator orientation="vertical" />
+          <a href="https://www.threads.net/@jtpotato_">Threads</a>
+          <Separator orientation="vertical" />
+          <a href="https://www.youtube.com/@jtpotato">YouTube</a>
         </div>
       </main>
     </div>
