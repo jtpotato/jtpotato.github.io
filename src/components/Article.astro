@@ -1,0 +1,23 @@
+---
+interface Props {
+  title: string;
+  image: string;
+  url: string;
+}
+
+const { title, image, url } = Astro.props;
+---
+
+<!-- Article Embed Component -->
+<a href={url} target="_blank">
+  <div class="rounded-2xl border overflow-hidden w-80">
+    <div
+      class="h-32 bg-cover bg-center"
+      style=`background-image: url('${image}');`
+    >
+    </div>
+    <div class="bg-neutral-100 p-4">
+      <h2>{title}</h2>
+    </div>
+  </div>
+</a>

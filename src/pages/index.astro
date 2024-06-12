@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Article from "../components/Article.astro";
+---
+
+<Layout title="Joel">
+  <main class="p-4 md:pt-24 max-w-2xl m-auto">
+    <h1 class="text-5xl">哈喽！</h1>
+    <h2 class="text-4xl">I'm Joel</h2>
+    <p>I'm a student that codes a bit on the side - based in Melbourne ☕️</p>
+    <br />
+    <div>
+      <Article
+        title="JMSS are the champions at SIMC 2024"
+        image="/assets/simc.png"
+        url="https://jmss.vic.edu.au/news/in-the-media/jmss-are-the-champions-at-simc-2024/"
+      />
+    </div>
+  </main>
+  <footer class="absolute bottom-0 left-0 p-4">
+    <p>Made with ❤️ and 🧋</p>
+    <p>v2024.6.12</p>
+  </footer>
+</Layout>
