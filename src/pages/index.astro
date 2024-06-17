@@ -2,25 +2,35 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Article from "../components/Article.astro";
+import Hero from "./Hero.astro";
+import "./ProgressiveBlur.css";
+import Background from "./Background.astro";
 ---
 
 <Layout title="Joel">
-  <main class="p-4 md:pt-24 max-w-2xl m-auto">
-    <h1 class="text-5xl">哈喽！</h1>
-    <h2 class="text-4xl">I'm Joel</h2>
-    <p>I'm a student that codes a bit on the side - based in Melbourne ☕️</p>
-    <br />
-    <h2 class="text-2xl">Media</h2>
-    <div>
-      <Article
-        title="JMSS are the champions at SIMC 2024"
-        image="/assets/simc.png"
-        url="https://jmss.vic.edu.au/news/in-the-media/jmss-are-the-champions-at-simc-2024/"
-      />
+  <Background />
+  <div class="max-w-6xl m-auto">
+    <div class="p-4 md:pt-60 mb-40">
+      <Hero />
     </div>
-  </main>
-  <footer class="absolute bottom-0 left-0 p-4">
-    <p>Made with ❤️ and 🧋</p>
-    <p>v2024.6.12</p>
-  </footer>
+    <main>
+      <div class="p-4 max-w-6xl m-auto">
+        <h2 class="text-4xl font-bold">Media</h2>
+        <p class="text-neutral-400">From OpenGraph information.</p>
+        <br />
+        <div class="flex gap-4 justify-stretch items-stretch">
+          <Article
+            url="https://jmss.vic.edu.au/news/in-the-media/jmss-are-the-champions-at-simc-2024/"
+          />
+          <Article
+            url="https://simc2024.net/2024/04/05/day-2/#1-faces-of-simc-john-monash-science-school"
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="w-full p-4">
+      <p>Made with ❤️ and 🧋</p>
+      <p class="text-neutral-400">v2024.6.12</p>
+    </footer>
+  </div>
 </Layout>
