@@ -1,7 +1,0 @@
-input {
-  @apply border-black/10 border rounded-lg bg-gradient-to-br from-white/10 to-black/10 px-2 p-1
-}
-
-label {
-  @apply text-sm
-}

@@ -1,0 +1,32 @@
+---
+// @ts-expect-error
+import ArrowUpRight from "~icons/mingcute/arrow-right-up-fill";
+import ogs from "open-graph-scraper";
+
+interface Props {
+  url: string;
+}
+
+const { url } = Astro.props;
+
+// fetch opengraph image and title from page.
+const data = await ogs({ url });
+if (!data.response) {
+  throw new Error("No data");
+}
+
+const image = data.result.ogImage![0].url;
+const title = data.result.ogTitle;
+const author = data.result.ogSiteName;
+---
+
+<!-- Article Embed Component -->
+<a href={url} target="_blank">
+  <div class="relative rounded-lg overflow-clip w-96 shadow-md h-full">
+    <img src={image} class="w-full h-full object-cover" />
+    <div class="absolute bottom-0 p-4 bg-white/80 backdrop-blur-lg w-full">
+      <p class="text-wrap">{title}</p>
+      <p class="text-sm text-neutral-500">{author}</p>
+    </div>
+  </div>
+</a>
