@@ -4,12 +4,13 @@ import Card from "../components/Card.astro";
 import Article from "../components/Article.astro";
 import Hero from "./Hero.astro";
 import Background from "./Background.astro";
+import Projects from "./Projects.astro";
 ---
 
 <Layout title="Joel">
   <Background />
   <div class="max-w-6xl m-auto">
-    <div class="p-4 md:pt-60 mb-40">
+    <div class="p-4 md:pt-60 mb-20">
       <Hero />
     </div>
     <main>
@@ -24,8 +25,10 @@ import Background from "./Background.astro";
           <Article
             url="https://simc2024.net/2024/04/05/day-2/#1-faces-of-simc-john-monash-science-school"
           />
-          <Article url="https://youtu.be/V2Em-I_yBU0" />
+          <!-- <Article url="https://youtu.be/V2Em-I_yBU0" /> -->
         </div>
+        <br />
+        <Projects />
       </div>
     </main>
     <footer class="w-full p-4">

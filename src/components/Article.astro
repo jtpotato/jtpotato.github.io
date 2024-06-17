@@ -23,7 +23,7 @@ const author = data.result.ogSiteName;
 <!-- Article Embed Component -->
 <a href={url} target="_blank">
   <div class="relative rounded-lg overflow-clip w-96 shadow-md h-full">
-    <img src={image} class="w-full h-full object-cover" />
+    <img src={image} class="w-full h-full object-cover" loading="lazy" />
     <div class="absolute bottom-0 p-4 bg-white/80 backdrop-blur-lg w-full">
       <p class="text-wrap">{title}</p>
       <p class="text-sm text-neutral-500">{author}</p>
