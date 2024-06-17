@@ -1,0 +1,12 @@
+---
+var today = new Date();
+var month = today.getMonth() + 1;
+var year = today.getFullYear();
+var day = today.getDate();
+var versionString = `v${year}.${month}.${day}`;
+---
+
+<footer class="w-full p-4">
+  <p>Made with ❤️ and 🧋</p>
+  <p class="text-neutral-400">{versionString}</p>
+</footer>
