@@ -20,11 +20,15 @@ const projectJsons = await Promise.all(
 <h2 class="text-4xl font-bold">Projects</h2>
 <p class="text-neutral-400">A selection.</p>
 <br />
-<div class="flex flex-col gap-4">
+<div class="flex flex-col">
   {
     projectJsons.map((project) => {
       return (
-        <a href={`https://github.com/${project.full_name}`} target="_blank">
+        <a
+          href={`https://github.com/${project.full_name}`}
+          target="_blank"
+          class="rounded-lg p-4 w-fit hover:pl-5 hover:border hover:border-neutral-400/20 hover:backdrop-blur-sm hover:bg-neutral-700/5 hover:shadow-sm transition-all duration-400 ease-in-out"
+        >
           <p class="font-bold text-xl">{project.full_name}</p>
           <p class="text-neutral-500">
             {project.language} &#x2022;{" "}
