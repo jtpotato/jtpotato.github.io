@@ -1,26 +1,28 @@
 {
-  "name": "bustling-binary",
-  "version": "0.0.1",
-  "dependencies": {
-    "@astrojs/check": "^0.7.0",
-    "@astrojs/tailwind": "^5.1.0",
-    "@fontsource-variable/space-grotesk": "^5.0.18",
-    "@iconify-json/mingcute": "^1.1.17",
-    "astro": "^4.10.2",
-    "glslCanvas": "^0.2.6",
-    "open-graph-scraper": "^6.5.2",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^5.4.5"
-  },
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "type": "module",
+  "dependencies": {
+    "@signal-noise/react-shader-canvas": "^0.0.3",
+    "next": "14.2.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "shadertoy-react": "^1.1.2"
+  },
   "devDependencies": {
-    "unplugin-icons": "^0.19.0"
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4"
   }
 }
