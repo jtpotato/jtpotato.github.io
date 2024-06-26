@@ -28,7 +28,7 @@ function DavidHowes() {
           The Singapore International Mathematical and Computational Challenge
           is one of the most prestigious global school mathematics competitions,
           and to have a Victorian government school win this event is brilliant.
-          JMSS's win is a timely reminder of the excellence as well as the
+          JMSS&apos;s win is a timely reminder of the excellence as well as the
           equity pursued and achieved by our schools.
           <br />
           <br />
