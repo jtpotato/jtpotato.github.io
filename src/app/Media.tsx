@@ -7,7 +7,7 @@ function Media() {
       <div className="flex flex-wrap gap-4">
         <Article
           link="/statements/david-howes"
-          title="David Howes on JMSS&lsqo;s SIMC win"
+          title="David Howes on JMSS's SIMC win"
           note="David Howes - Victorian Department of Education and Training"
         />
         <Article
