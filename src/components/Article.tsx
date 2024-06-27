@@ -13,15 +13,22 @@ function Article({
     <a href={link} target="_blank">
       <div className="relative rounded-lg overflow-clip w-96 shadow-md h-full">
         {image ? (
-          <img src={image} className="w-full h-full object-cover" alt={title} />
+          <>
+            <img src={image} className="object-cover w-full h-40" alt={title} />
+            <img
+              src={image}
+              className="absolute bottom-0 -z-10 object-cover w-full"
+              alt={title}
+            />
+          </>
         ) : (
-          <div className="w-full h-full bg-neutral-800 text-white flex justify-center p-24">
+          <div className="bg-neutral-800 text-white flex justify-center p-24">
             No Image
           </div>
         )}
-        <div className="absolute bottom-0 p-4 bg-white/80 backdrop-blur-lg w-full">
-          <p className="text-wrap">{title}</p>
-          <p className="text-sm text-neutral-500">{note}</p>
+        <div className="p-4 backdrop-blur-lg bg-white/80">
+          <p className="text-wrap line-clamp-1">{title}</p>
+          <p className="text-sm text-neutral-500 line-clamp-1">{note}</p>
         </div>
       </div>
     </a>

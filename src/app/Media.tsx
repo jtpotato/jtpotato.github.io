@@ -9,6 +9,7 @@ function Media() {
           link="/statements/david-howes"
           title="David Howes on JMSS's SIMC win"
           note="David Howes - Victorian Department of Education and Training"
+          image="https://content.vic.gov.au/sites/default/files/2022-09/Vic_Gov_Default_Display_Image_Proper_Spacing.png"
         />
         <Article
           link="https://www.asi.edu.au/australian-team-2024-international-earth-science-olympiad/"
@@ -27,6 +28,12 @@ function Media() {
           title="Faces of SIMC - John Monash Science School"
           note="Singapore International Mathematical & Computational Challenge 2024"
           image="https://i0.wp.com/simc2024.net/wp-content/uploads/2024/05/Photo-1.jpeg?resize=2048%2C1536&ssl=1"
+        />
+        <Article
+          link=""
+          title="Results - IMMC 2024 National Finals"
+          note="Australian Council for Educational Research"
+          image="https://www.immchallenge.org.au/files/IM2C-Facebook-1200-x-628.jpg"
         />
       </div>
     </>
