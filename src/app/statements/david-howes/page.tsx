@@ -3,7 +3,7 @@ function DavidHowes() {
     <>
       <div className="p-4 py-8 max-w-2xl m-auto">
         <h1 className="text-4xl font-bold mb-8">
-          David Howes on JMSS&lsquo;s SIMC win
+          David Howes on JMSS&apos;s SIMC win
         </h1>
         <p>
           Dear colleagues

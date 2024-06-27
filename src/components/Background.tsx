@@ -1,6 +1,7 @@
 "use client";
 
 import shader from "./background.frag";
+// @ts-ignore
 import ShaderCanvas from "@signal-noise/react-shader-canvas";
 
 function Background() {
