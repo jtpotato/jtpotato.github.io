@@ -30,10 +30,16 @@ function Media() {
           image="https://i0.wp.com/simc2024.net/wp-content/uploads/2024/05/Photo-1.jpeg?resize=2048%2C1536&ssl=1"
         />
         <Article
-          link=""
+          link="https://www.immchallenge.org.au/results"
           title="Results - IMMC 2024 National Finals"
           note="Australian Council for Educational Research"
           image="https://www.immchallenge.org.au/files/IM2C-Facebook-1200-x-628.jpg"
+        />
+        <Article
+          link="https://rtlaustralia.com/2016/12/11/well-done-to-students-at-glendal-ps-a-new-rtl-partner-school-in-2017-on-winning-a-project-award-at-the-national-first-lego-league-held-in-the-sydney-over-the-weekend-they-have-been-invited-to-represen/"
+          title="Well done to students at Glendal PS (a new RTL partner school in 2017) on winning The Innovation Award for their Guinea Pig project at the National First Lego League held in the Sydney over the weekend"
+          note="Realtime Learning"
+          image="https://rtlaustralia.com/wp-content/uploads/2019/11/2497d4_614689f1305b41c7b71bbe0a7049754e-mv2.jpg"
         />
       </div>
     </>

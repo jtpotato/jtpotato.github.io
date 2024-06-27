@@ -22,8 +22,8 @@ function Article({
             />
           </>
         ) : (
-          <div className="bg-neutral-800 text-white flex justify-center p-24">
-            No Image
+          <div className="bg-neutral-800 h-40 text-white flex justify-center items-center">
+            <p>No Image</p>
           </div>
         )}
         <div className="p-4 backdrop-blur-lg bg-white/80">
