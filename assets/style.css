@@ -1,0 +1,17 @@
+@tailwind base;
+
+@layer base {
+  body {
+    @apply p-4;
+  }
+
+  li {
+    @apply ml-2;
+  }
+  li::before {
+    content: "- ";
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
