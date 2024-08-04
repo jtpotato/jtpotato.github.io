@@ -11,7 +11,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        display: ["JetBrains Mono"],
+        display: ["IBM Plex Mono"],
+        text: ["IBM Plex Sans"],
       },
     },
   },

@@ -4,6 +4,14 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
 
+  content: {
+    markdown: {
+      mdc: true,
+    },
+  },
+
+  components: true,
+
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -11,5 +19,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/fonts", "@nuxt/content"]
+  modules: ["@nuxt/fonts", "@nuxt/content"],
 });

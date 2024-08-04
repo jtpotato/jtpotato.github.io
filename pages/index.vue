@@ -3,14 +3,14 @@ import CurrentTime from "~/components/CurrentTime.vue";
 </script>
 
 <template>
-  <div class="max-w-xl m-auto">
-    <h1 class="font-display text-2xl">Joel Tan / 陈奕諴</h1>
+  <div class="max-w-2xl m-auto mt-8">
+    <h1 class="font-display text-4xl mb-2">Joel Tan / 陈奕諴</h1>
     <p>
-      I sometimes make projects to solve problems. I play around with SwiftUI,
-      React/Next, Vue, and PyTorch. Based in Melbourne, Australia.
+      I sometimes make projects to solve problems. I play around with Rust,
+      SwiftUI, React/Next, Vue, and PyTorch. Based in Melbourne, Australia.
     </p>
     <br />
-    <h2 class="font-display">Recent Projects</h2>
+    <h2 class="font-display text-lg">Recent Projects</h2>
     <div class="flex gap-2 *:grow">
       <ProjectPreview
         href="https://github.com/jtpotato/robocup-soccer-2024"
