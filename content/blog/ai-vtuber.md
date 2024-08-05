@@ -55,7 +55,7 @@ Rewrote the thing 7 times, flipping between Python, Go and Rust. Gosh I love Rus
 
 State will forever be my enemy in any of my projects.
 
-Golang was infinitely better, but I was so sick of the `:=` walrus operator every time the codebase got longer than 20 lines. I appreciate this paradigm of managing errors as they arise rather than escalating with `?` or `try/except`, and it's something that I will carry over to other languages that don't explicitly force you to do that. Multiple returns from functions was just gross though. It doesn't sit right.
+And Golang just didn't spark joy.
 
 I was also stuck between conflicting sources about whether or not referring to pointers instead of the actual objects when passing them to functions was "premature optimisation".
 
