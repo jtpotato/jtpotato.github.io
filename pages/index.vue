@@ -3,8 +3,9 @@ import CurrentTime from "~/components/CurrentTime.vue";
 </script>
 
 <template>
-  <div class="max-w-2xl m-auto mt-8">
-    <h1 class="font-display text-4xl mb-2">Joel Tan / 陈奕諴</h1>
+  <SiteHeader />
+  <div class="max-w-2xl m-auto mt-8 p-4">
+    <h1 class="font-display text-lg">About</h1>
     <p>
       I sometimes make projects to solve problems. I play around with Rust,
       SwiftUI, React/Next, Vue, and PyTorch. Based in Melbourne, Australia.
@@ -34,6 +35,14 @@ import CurrentTime from "~/components/CurrentTime.vue";
         href="https://github.com/jtpotato/firetrace"
         title="Firetrace: Continental scale bushfire modelling for Australia."
       />
+    </div>
+    <br />
+    <div>
+      <NuxtLink href="/blog">
+        <div class="border p-4 rounded-lg bg-neutral-100 border-neutral-200">
+          <p class="text-center">Blog</p>
+        </div>
+      </NuxtLink>
     </div>
     <br />
     <p>Made with 🧋 and ❤️</p>

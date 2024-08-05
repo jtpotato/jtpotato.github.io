@@ -1,8 +1,9 @@
 <template>
   <ContentDoc>
     <template #default="{ doc }">
-      <div class="grid grid-cols-5 md:gap-8 mt-8 p-4 w-full">
-        <a href="/blog" class="col-span-5 md:col-span-1 text-sm mb-8 mt-8">
+      <SiteHeader />
+      <div class="grid grid-cols-5 md:gap-8 mt-4 p-4 w-full">
+        <a href="/blog" class="col-span-5 md:col-span-1 text-sm mb-8">
           <p>← Back to Blog</p>
         </a>
         <article class="col-span-5 md:col-span-3 prose max-w-3xl m-auto">
