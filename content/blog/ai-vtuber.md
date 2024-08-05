@@ -65,4 +65,8 @@ Rust kind of had all of these issues. Which can be solved by letting the compile
 
 An AI Vtuber is such an overkill application for Rust - you could easily pull this off with Python. But I can't think of a language that better forces you to write code that's so... maintainable and follows all the correct patterns. I believe Rust will force me to write good code that stands up even months later, when I next take a look at this project.
 
+### 5th August
+
+Slightly rewrote error handling. I'm still trying to work out how to best structure it.
+
 [^1]: _Aside:_ I think that not having enough money or hardware resources really forces you to be creative and focus on optimisation. It would have been really easy to just throw more VRAM at the problem and have a working solution, but I really like what taking the time to optimise has done for me.
