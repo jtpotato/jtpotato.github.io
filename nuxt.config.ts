@@ -7,6 +7,13 @@ export default defineNuxtConfig({
   content: {
     markdown: {
       mdc: true,
+      rehypePlugins: {
+        "rehype-external-links": {
+          options: {
+            target: "_blank",
+          },
+        },
+      },
     },
   },
 

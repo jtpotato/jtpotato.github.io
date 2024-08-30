@@ -1,6 +1,7 @@
 ---
 title: "Lingling Development Log"
 date: 2024-08-04
+draft: true
 ---
 
 This page describes the development of Lingling (零零一, _lit. 001_), an experiment into getting Large Language Models to talk to other things, such as Whisper and TTS models.

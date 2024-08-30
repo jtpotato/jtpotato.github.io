@@ -13,7 +13,7 @@ import SiteHeader from "~/components/SiteHeader.vue";
         <ContentList path="/blog" v-slot="{ list }">
           <div v-for="article in list">
             <NuxtLink :href="article._path">
-              <div class="flex justify-between">
+              <div class="flex justify-between mb-4">
                 <h2 class="text-lg">{{ article.title }}</h2>
                 <p class="text-sm">
                   {{ new Date(article.date).toLocaleDateString() }}
