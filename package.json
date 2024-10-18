@@ -1,24 +1,15 @@
 {
-  "name": "nuxt-app",
+  "name": "--template",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@nuxt/content": "^2.13.2",
-    "@nuxt/fonts": "^0.7.1",
-    "nuxt": "^3.12.4",
-    "vue": "latest"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.13",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.40",
-    "tailwindcss": "^3.4.7"
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8"
   }
 }
